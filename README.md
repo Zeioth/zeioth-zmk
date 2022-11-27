@@ -1,5 +1,5 @@
-# zmk-config
-My wireless keyboard drivers
+# Zeioth zmk-config
+My wireless keyboard firmware
 
 ## How to flash (Linux)
 

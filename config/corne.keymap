@@ -41,7 +41,7 @@
     //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                             bindings = <
        &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp BSPC
-       &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
+       &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &ZM_CKC_ACCCENT
        &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                       &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F >;
     };
@@ -810,14 +810,135 @@
 
     // HYPER LAYER HERE
     // ----------------------------------------------------------------------
-
+    ZMK_MACRO(M_CBACKUP, // Spawns a term → Encrypted backup to the cloud
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_UPDATE_PACKAGES, // Spawns a term → Perform system update
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_ROFI, // Spawns the application launcher
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_ROFI_SHORTCUTS, // Perform an encrypted backup to the cloud
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_ROFI_EMOJI, // Shows all emojis and copy selection to clipboard
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_CALC, // Opens calculator
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_ROFI_MANUALS, // IDK
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_ROFI_DOCS, // Open rofi-real by zeioth
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_ROFI_ACTIVITIES, // Open the activities selector
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_RANGER, // Opens ranger TUI file browser
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_FILEX, // Open GUI file browser
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_VIM, // Opens vim
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(M_WEATHER, // Open TUI weather
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
 
     // SET LAYERS 'ON' ONLY WHILE PRESSED
     // ----------------------------------------------------------------------
-
+    // BASE
+    // LOWER
+    // RAISE
+    // ADJUST
+    // SUPER
 
     // SPECIAL LAYERS 
     // ----------------------------------------------------------------------
+    // ARROW MODE
 
 
   }; // END MACROS

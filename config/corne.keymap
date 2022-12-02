@@ -42,12 +42,12 @@
     // | CTRL |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |   ´     |
     // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  ?  |  SHIFT  |
     //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-                            bindings = <
+    bindings = <
        &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp CKC_BSPC
        &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &CKC_ACCENT
        &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp CKC_RSHFT
-                      &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F >;
-    };
+                      &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F
+    >;};
 
     // ############################################################# SUPER ########################################################################
     super_layer {
@@ -57,10 +57,10 @@
     // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
     //                    | GUI |     | SPC |   | ENT |     | ALT |
     bindings = <
-       &kp TAB    &M_LOCK      &kp KC_AUDIO_VOL_DOWN       &kp N3               &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-       &bt LCTRL  &bt BT_SEL 0 &bt BT_SEL 1                &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-       &kp LSHFT  &trans       &trans                      &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                 &kp LGUI     &trans       &kp SPACE       &kp RET  &trans   &kp RALT 
+       &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+       &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT 
     >;};
 
     /* super_layer { */

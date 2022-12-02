@@ -34,28 +34,19 @@
   keymap { 
     compatible = "zmk,keymap";
 
-    default_layer {
-    // -----------------------------------------------------------------------------------------
-    // |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  Ñ  |  BKSP   |
-    // | CTRL |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |   ´     |
-    // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  ?  |  SHIFT  |
-    //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-                            bindings = <
+    // ############################################################  DEFAULT ########################################################################
+    default_layer { bindings = <
        &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &CKC_BSPC
        &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &CKC_ACCENT
        &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &CKC_RSFT
-                      &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F >;
-    };
+                      &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F >;};
 
-    super_layer {
-                            bindings = <
+    // ############################################################  SUPER ########################################################################
+    super_layer { bindings = <
        &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
        &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;
-    };
-
-
+                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;};
     /* super_layer { */
     /* bindings = < */
     /*    &kp LGUI  &M_LOCK      &kp K_AUDIO_VOL_DOWN &kp K_AUDIO_VOL_UP &kp K_MUTE &I3_KILL   &I3_XKILL  &kp K_NEXT &kp K_PREV &M_PWMENU      &kp C_PAUSE &kp RALT */
@@ -64,71 +55,40 @@
     /*                                                             &kp LGUI &trans &kp SPACE   &kp RET  &trans   &kp RALT */ 
     /* >;}; */
 
-    lower_layer {
-    // -----------------------------------------------------------------------------------------
-    // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-    // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-    // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-    //                    | GUI |     | SPC |   | ENT |     | ALT |
-                            bindings = <
+    // ############################################################  LOWER ########################################################################
+    lower_layer { bindings = <
        &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
        &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;
-    };
+                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;};
 
-    raise_layer {
-    // -----------------------------------------------------------------------------------------
-    // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-    // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-    // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-    //                    | GUI |     | SPC |   | ENT |     | ALT |
-                            bindings = <
+    // ############################################################  RAISE ########################################################################
+    raise_layer { bindings = <
        &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
        &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
        &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;
-    };
+                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;};
 
-    hyper_layer {
-    // -----------------------------------------------------------------------------------------
-    // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-    // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-    // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-    //                    | GUI |     | SPC |   | ENT |     | ALT |
-                            bindings = <
+    // ############################################################  HYPER ########################################################################
+    hyper_layer { bindings = <
        &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
        &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
        &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;
-    };
+                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;};
 
-    config_layer {
-    // -----------------------------------------------------------------------------------------
-    // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-    // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-    // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-    //                    | GUI |     | SPC |   | ENT |     | ALT |
-                            bindings = <
+    // ############################################################  ARROW ########################################################################
+    arrow_layer { bindings = <
        &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
        &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
        &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;
-    };
+                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;};
 
-    arrow_layer {
-    // -----------------------------------------------------------------------------------------
-    // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-    // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-    // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-    //                    | GUI |     | SPC |   | ENT |     | ALT |
-                            bindings = <
+    // ############################################################  CONFIG ########################################################################
+    config_layer { bindings = <
        &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
        &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
        &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;
-    };
-
+                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;};
 
   };// END KEYMAPS
 

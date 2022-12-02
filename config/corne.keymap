@@ -92,8 +92,6 @@
     // BASE LAYER MACROS 
     // -----------------------------------------------------------------------
     ZMK_MACRO(CKC_CTRLBS, // CTRL + BACKSPACE
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -101,8 +99,6 @@
           ;
     )
     ZMK_MACRO(CKC_BSPC, // BACKSPACE AND DEL
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -110,8 +106,6 @@
           ;
     )
     ZMK_MACRO(CKC_RLOCK, // RAISE LOCK and ARROW MODE (Currently disabled)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -119,8 +113,6 @@
           ;
     )
     ZMK_MACRO(CKC_RSFT, // RSHIFT and ARROW MODE (bug RShift doesn't work)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -133,8 +125,6 @@
     // -----------------------------------------------------------------------
 
     ZMK_MACRO(M_WS1, // WORKSPACE 1
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -142,8 +132,6 @@
           ;
     )
     ZMK_MACRO(M_WS2, // WORKSPACE 2
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -151,8 +139,6 @@
           ;
     )
     ZMK_MACRO(M_WS3, // WORKSPACE 3
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -160,8 +146,6 @@
           ;
     )
     ZMK_MACRO(M_WS4, // WORKSPACE 4
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -169,8 +153,6 @@
           ;
     )
     ZMK_MACRO(M_WS5, // WORKSPACE 5
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -178,8 +160,6 @@
           ;
     )
     ZMK_MACRO(M_WS6, // WORKSPACE 6
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -187,8 +167,6 @@
           ;
     )
     ZMK_MACRO(M_WS7, // WORKSPACE 7
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -196,8 +174,6 @@
           ;
     )
     ZMK_MACRO(M_WS8, // WORKSPACE 8
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -205,8 +181,6 @@
           ;
     )
     ZMK_MACRO(F_WL, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -214,8 +188,6 @@
           ;
     )
     ZMK_MACRO(F_WD, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -223,8 +195,6 @@
           ;
     )
     ZMK_MACRO(F_WU, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -232,8 +202,6 @@
           ;
     )
     ZMK_MACRO(F_WR, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -241,8 +209,6 @@
           ;
     )
     ZMK_MACRO(M_LOCK, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -250,8 +216,6 @@
           ;
     )
     ZMK_MACRO(M_PWMENU, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -259,8 +223,6 @@
           ;
     )
     ZMK_MACRO(I3_LYM, // LAYOUT MANAGER (Currently disabled)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -268,8 +230,6 @@
           ;
     )
     ZMK_MACRO(M_HELP, // OPEN USAGE INSTRUCTIONS FOR THIS FIRMWARE.
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -277,8 +237,6 @@
           ;
     )
     ZMK_MACRO(M_VIM_HELP, // OPEN USAGE INSTRUCTIONS FOR OUT VIM CONFIG.
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -286,8 +244,6 @@
           ;
     )
     ZMK_MACRO(I3_FS, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -295,8 +251,6 @@
           ;
     )
     ZMK_MACRO(I3_DISPLAYS, // MODE: DISPLAYS
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -304,8 +258,6 @@
           ;
     )
     ZMK_MACRO(I3_SCREENSHOT, // MODE: SCREENSHOTS
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -313,8 +265,6 @@
           ;
     )
     ZMK_MACRO(I3_RESIZE, // MODE: RESIZE TILE SIZE
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -322,8 +272,6 @@
           ;
     )
     ZMK_MACRO(I3_MOVE, // MODE: MOVE TILE
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -331,8 +279,6 @@
           ;
     )
     ZMK_MACRO(I3_SPAD, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -340,8 +286,6 @@
           ;
     )
     ZMK_MACRO(I3_WINTAB, // SWAYR LIST ALL TILES
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -349,8 +293,6 @@
           ;
     )
     ZMK_MACRO(I3_KILL, // I3 CLOSE TILE
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -358,8 +300,6 @@
           ;
     )
     ZMK_MACRO(I3_XKILL, // SWAYR KILL -9 TILE
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -367,8 +307,6 @@
           ;
     )
     ZMK_MACRO(I3_PW, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -376,8 +314,6 @@
           ;
     )
     ZMK_MACRO(I3_NW, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -385,8 +321,6 @@
           ;
     )
     ZMK_MACRO(I3_RESET, // RESETS I3
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -394,8 +328,6 @@
           ;
     )
     ZMK_MACRO(I3_FLOAT, // TOGGLES FLOAT MODE FOR THE SELECTED TILE
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -406,8 +338,6 @@
     // LOWER LAYER MACROS 
     // -----------------------------------------------------------------------
     ZMK_MACRO(CKC_ACCENT, // ´ and `
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -415,8 +345,6 @@
           ;
     )
     ZMK_MACRO(CKC_HASH, // #
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -424,8 +352,6 @@
           ;
     )
     ZMK_MACRO(CKC_QUOT, // ' and · (bullet)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -433,8 +359,6 @@
           ;
     )
     ZMK_MACRO(CKC_DQUOT, // " and ¨ (dieresis)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -442,8 +366,6 @@
           ;
     )
     ZMK_MACRO(CKC_QMA, // ? and ¿
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -451,8 +373,6 @@
           ;
     )
     ZMK_MACRO(CKC_EXCLAM, // ! and ¡
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -460,8 +380,6 @@
           ;
     )
     ZMK_MACRO(CKC_PERC, // % and ¬
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -469,8 +387,6 @@
           ;
     )
     ZMK_MACRO(CKC_PLUS, // +
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -478,8 +394,6 @@
           ;
     )
     ZMK_MACRO(CKC_MINUS, // - and _
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -487,8 +401,6 @@
           ;
     )
     ZMK_MACRO(CKC_ASTERISK, // * and ^
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -496,8 +408,6 @@
           ;
     )
     ZMK_MACRO(CKC_SLASH, // '/' and '\'
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -505,8 +415,6 @@
           ;
     )
     ZMK_MACRO(CKC_EQUAL, // =
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -514,8 +422,6 @@
           ;
     )
     ZMK_MACRO(CKC_LESS, // < and ←
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -523,8 +429,6 @@
           ;
     )
     ZMK_MACRO(CKC_MORE, // > and →
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -532,8 +436,6 @@
           ;
     )
     ZMK_MACRO(CKC_O_PAR, // ( and €
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -541,8 +443,6 @@
           ;
     )
     ZMK_MACRO(CKC_C_PAR, // ) and $
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -550,8 +450,6 @@
           ;
     )
     ZMK_MACRO(CKC_AND, // & and ª
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -559,8 +457,6 @@
           ;
     )
     ZMK_MACRO(CKC_OR, // || and º
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -568,8 +464,6 @@
           ;
     )
     ZMK_MACRO(CKC_O_CUR, // {
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -577,8 +471,6 @@
           ;
     )
     ZMK_MACRO(CKC_C_CUR, // }
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -586,8 +478,6 @@
           ;
     )
     ZMK_MACRO(CKC_O_BRK, // [
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -595,8 +485,6 @@
           ;
     )
     ZMK_MACRO(CKC_C_BRK, // ]
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -607,8 +495,6 @@
     // RAISE LAYER HERE
     // ----------------------------------------------------------------------
     ZMK_MACRO(VIM_CIT, // change inner tag
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -616,8 +502,6 @@
           ;
     )
     ZMK_MACRO(VIM_CIP, // change inner paragraph
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -625,8 +509,6 @@
           ;
     )
     ZMK_MACRO(VIM_CIS, // change inner sentence
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -634,8 +516,6 @@
           ;
     )
     ZMK_MACRO(VIM_CIW, // change inner word
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -643,8 +523,6 @@
           ;
     )
     ZMK_MACRO(VIM_CIB, // change inner block of code {}
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -652,8 +530,6 @@
           ;
     )
     ZMK_MACRO(VIM_VIT, // visual inner tag (selection)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -661,8 +537,6 @@
           ;
     )
     ZMK_MACRO(VIM_VIP, // visual inner paragraph (selection)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -670,8 +544,6 @@
           ;
     )
     ZMK_MACRO(VIM_VIS, // visual inner sentence (selection)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -679,8 +551,6 @@
           ;
     )
     ZMK_MACRO(VIM_VIW, // visual inner word (selection)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -688,8 +558,6 @@
           ;
     )
     ZMK_MACRO(VIM_VIB, // visual inner block of code {} (selection)
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -697,8 +565,6 @@
           ;
     )
     ZMK_MACRO(VIM_DIT, // delete inner tag
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -706,8 +572,6 @@
           ;
     )
     ZMK_MACRO(VIM_DIP, // delete inner paragraph
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -715,8 +579,6 @@
           ;
     )
     ZMK_MACRO(VIM_DIS, // delete inner sentence
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -724,8 +586,6 @@
           ;
     )
     ZMK_MACRO(VIM_DIW, // delete inner word
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -733,8 +593,6 @@
           ;
     )
     ZMK_MACRO(VIM_DIB, // delete inner block of code {}
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -742,8 +600,6 @@
           ;
     )
     ZMK_MACRO(VIM_GDM, // Go method - down [m
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -751,8 +607,6 @@
           ;
     )
     ZMK_MACRO(VIM_GDU, // Go method - up ]m
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -760,8 +614,6 @@
           ;
     )
     ZMK_MACRO(VIM_GTD, // Go tag/class - down ,c1/]]
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -769,8 +621,6 @@
           ;
     )
     ZMK_MACRO(VIM_GTU, // Go tag/class - up ,c2/[[
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -781,8 +631,6 @@
     // HYPER LAYER HERE
     // ----------------------------------------------------------------------
     ZMK_MACRO(M_CBACKUP, // Spawns a term → Encrypted backup to the cloud
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -790,8 +638,6 @@
           ;
     )
     ZMK_MACRO(M_UPDATE_PACKAGES, // Spawns a term → Perform system update
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -799,8 +645,6 @@
           ;
     )
     ZMK_MACRO(M_ROFI, // Spawns the application launcher
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -808,8 +652,6 @@
           ;
     )
     ZMK_MACRO(M_ROFI_SHORTCUTS, // Perform an encrypted backup to the cloud
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -817,8 +659,6 @@
           ;
     )
     ZMK_MACRO(M_ROFI_EMOJI, // Shows all emojis and copy selection to clipboard
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -826,8 +666,6 @@
           ;
     )
     ZMK_MACRO(M_CALC, // Opens calculator
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -835,8 +673,6 @@
           ;
     )
     ZMK_MACRO(M_ROFI_MANUALS, // IDK
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -844,8 +680,6 @@
           ;
     )
     ZMK_MACRO(M_ROFI_DOCS, // Open rofi-real by zeioth
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -853,8 +687,6 @@
           ;
     )
     ZMK_MACRO(M_ROFI_ACTIVITIES, // Open the activities selector
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -862,8 +694,6 @@
           ;
     )
     ZMK_MACRO(M_RANGER, // Opens ranger TUI file browser
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -871,8 +701,6 @@
           ;
     )
     ZMK_MACRO(M_FILEX, // Open GUI file browser
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -880,8 +708,6 @@
           ;
     )
     ZMK_MACRO(M_VIM, // Opens vim
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
@@ -889,8 +715,6 @@
           ;
     )
     ZMK_MACRO(M_WEATHER, // Open TUI weather
-      wait-ms = <30>;
-      tap-ms = <40>;
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>

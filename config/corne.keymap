@@ -18,10 +18,11 @@
 // ---------------------------------------
 #define DEFAULT 0
 #define LOWER   1
-#define RAISE   2
-#define HYPER   3
-#define CONFIG  4
-#define ARROW   5
+#define LOWER   2
+#define RAISE   3
+#define HYPER   4
+#define CONFIG  5
+#define ARROW   6
 #define NONE    0
 
 
@@ -45,6 +46,15 @@
        &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &CKC_RSFT
                       &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F >;
     };
+
+    super_layer {
+                            bindings = <
+       &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+       &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;
+    };
+
 
     /* super_layer { */
     /* bindings = < */

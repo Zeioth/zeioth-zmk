@@ -39,20 +39,20 @@
        &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &CKC_BSPC
        &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &CKC_ACCENT
        &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &CKC_RSFT
-                      &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F >;};
+                      &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt LALT ESC >;};
 
     // ############################################################  SUPER ########################################################################
     super_layer { bindings = <
-       &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN  &kp K_MUTE  &I3_KILL   &I3_XKILL  &kp K_NEXT   &kp K_PREV &kp K_PP &M_PWMENU &kp RALT
-       &kp LCTRL &M_WS7       &M_WS1       &M_WS2        &M_WS3       &I3_FS    &I3_WINTAB &M_WS4       &M_WS5     &M_WS6   &M_WS8    &none
-       &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE      &I3_SPAD    &I3_LYM    &I3_FLOAT  &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET   &kp RSHFT
+       &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN  &kp K_MUTE  &I3_KILL   &I3_XKILL  &kp K_NEXT &kp K_PREV &kp K_PP       &M_PWMENU &kp RALT
+       &kp LCTRL &M_WS7       &M_WS1       &M_WS2        &M_WS3       &I3_FS    &I3_WINTAB &M_WS4     &M_WS5     &M_WS6         &M_WS8    &mt LALT ESC
+       &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE      &I3_SPAD    &I3_LYM    &I3_FLOAT  &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET &kp RSHFT
                                            &kp LGUI      &trans    &kp SPACE    &kp RET  &trans   &kp RALT >;};
 
     // ############################################################  LOWER ########################################################################
     lower_layer { bindings = <
-       &kp LGUI  &kp N4       &kp N3       &kp N2       &kp N1       &kp N5         &kp N0   &kp N6   &kp N7 &kp N8    &kp N9 &kp RALT
-       &bt LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-       &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+       &kp LGUI  &kp N4       &kp N3       &kp N2       &kp N1          &kp N5         &kp N0   &kp N6   &kp N7 &kp N8    &kp N9 &kp RALT
+       &bt LCTRL &CKC_EXCLAM &CKC_HASH &CKC_QUOT &CKC_DQUOT &CKC_PERC   &CKC_PLUS &CKC_MINUS &CKC_ASTERISK &CKC_SLASH &CKC_EQUAL &mt LALT ESC
+       &kp LSHFT  &trans       &trans       &trans       &trans         &trans         &trans   &trans   &trans &trans    &trans &trans
                                         &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;};
 
     // ############################################################  RAISE ########################################################################

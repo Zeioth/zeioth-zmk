@@ -44,7 +44,7 @@
     // ############################################################  SUPER ########################################################################
     super_layer { bindings = <
        &kp LGUI  &M_LOCK &kp K_VOL_UP &kp K_VOL_DN  &kp K_MUTE  &I3_KILL       &I3_XKILL &kp K_NEXT   &kp K_PREV &kp K_PP &M_PWMENU &kp RALT
-       &kp LCTRL &M_WS7  &M_WS1       &M_WS2        &M_WS3      &I3_FS         &I3_WINTAB &M_WS4 &M_WS5 &M_WS6 &M_WS8 &trans
+       &kp LCTRL &M_WS7  &M_WS1       &M_WS2        &M_WS3      &I3_FS         &I3_WINTAB &M_WS4 &M_WS5 &M_WS6 &M_WS8 &kp NO
        &kp LSHFT &trans  &trans       &trans        &trans      &trans         &trans   &trans   &trans &trans    &trans &trans
                                         &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;};
     /* super_layer { */

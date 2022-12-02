@@ -44,21 +44,14 @@
     // ############################################################  SUPER ########################################################################
     super_layer { bindings = <
        &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN  &kp K_MUTE  &I3_KILL   &I3_XKILL  &kp K_NEXT   &kp K_PREV &kp K_PP &M_PWMENU &kp RALT
-       &kp LCTRL &M_WS7       &M_WS1       &M_WS2        &M_WS3      &I3_FS     &I3_WINTAB &M_WS4       &M_WS5     &M_WS6   &M_WS8    &none
+       &kp LCTRL &M_WS7       &M_WS1       &M_WS2        &M_WS3       &I3_FS    &I3_WINTAB &M_WS4       &M_WS5     &M_WS6   &M_WS8    &none
        &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE      &I3_SPAD    &I3_LYM    &I3_FLOAT  &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET   &kp RSHFT
-                                         &kp LGUI     &trans       &kp SPACE    &kp RET  &trans   &kp RALT >;};
-    /* super_layer { */
-    /* bindings = < */
-    /*    &kp LGUI  &M_LOCK      &kp K_AUDIO_VOL_DOWN &kp K_AUDIO_VOL_UP &kp K_MUTE &I3_KILL   &I3_XKILL  &kp K_NEXT &kp K_PREV &M_PWMENU      &kp C_PAUSE &kp RALT */
-    /*    &bt LCTRL &M_WS7       &M_WS1               &M_WS2             &M_WS3       &I3_FS   &I3_WINTAB &M_WS4     &M_WS5     &M_WS6         &M_WS8      &kp NO */
-    /*    &kp LSHFT &I3_DISPLAYS &I3_RESIZE           &I3_MOVE           &I3_SPAD    &I3_LYM   &I3_FLOAT  &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET   &kp RSHFT */
-    /*                                                             &kp LGUI &trans &kp SPACE   &kp RET  &trans   &kp RALT */ 
-    /* >;}; */
+                                           &kp LGUI      &trans    &kp SPACE    &kp RET  &trans   &kp RALT >;};
 
     // ############################################################  LOWER ########################################################################
     lower_layer { bindings = <
-       &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+       &kp LGUI  &kp N4       &kp N3       &kp N2       &kp N1       &kp N5         &kp N0   &kp N6   &kp N7 &kp N8    &kp N9 &kp RALT
+       &bt LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
        &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                                         &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;};
 

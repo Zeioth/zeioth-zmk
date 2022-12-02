@@ -17,12 +17,11 @@
 // Layers
 // ---------------------------------------
 #define DEFAULT 0
-#define SUPER   1
-#define LOWER   2
-#define RAISE   3
-#define HYPER   4
-#define CONFIG  5
-#define ARROW   6
+#define LOWER   1
+#define RAISE   2
+#define HYPER   3
+#define CONFIG  4
+#define ARROW   5
 #define NONE    0
 
 
@@ -41,24 +40,10 @@
     // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  ?  |  SHIFT  |
     //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                             bindings = <
-       &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &CKC_BSPC
+       &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp BSPC
        &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &CKC_ACCENT
-       &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &CKC_RSHFT
+       &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                       &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &mt RALT F >;
-    };
-
-
-    super_layer {
-    // -----------------------------------------------------------------------------------------
-    // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-    // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-    // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-    //                    | GUI |     | SPC |   | ENT |     | ALT |
-                            bindings = <
-       &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-       &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT >;
     };
 
     /* super_layer { */

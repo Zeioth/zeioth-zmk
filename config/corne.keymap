@@ -46,13 +46,13 @@
        &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &I3_KILL   &I3_XKILL   &kp K_NEXT &kp K_PREV &kp K_PP       &M_PWMENU &kp RALT
        &kp LCTRL &M_WS7       &M_WS1       &M_WS2       &M_WS3       &I3_FS   &I3_WINTAB  &M_WS4     &M_WS5     &M_WS6         &M_WS8    &mt LALT ESC
        &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE     &I3_SPAD    &I3_LYM   &I3_FLOAT   &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET &kp RSHFT
-                                           &mo 1        &mo 2         &mo 5   &none       &mo 3      &mt LALT ESC >;};
+                                              &mo 1        &mo 2      &mo 5   &none       &mo 3      &mt LALT ESC >;};
     // ############################################################  LOWER ########################################################################
     lower_layer { bindings = <
        &kp LGUI  &kp N4       &kp N3       &kp N2       &kp N1          &kp N5         &kp N0   &kp N6   &kp N7 &kp N8    &kp N9 &kp RALT
        &bt LCTRL &CKC_EXCLAM &CKC_HASH &CKC_QUOT  &CKC_DQUOT &CKC_PERC   &CKC_PLUS &CKC_MINUS &CKC_ASTERISK &CKC_SLASH &CKC_EQUAL &mt LALT ESC
        &kp LSHFT &CKC_LESS   &CKC_MORE &CKC_O_PAR &CKC_C_PAR  &CKC_AND   &CKC_OR   &CKC_C_CUR &CKC_O_CUR    &CKC_C_BRK &CKC_O_BRK &CKC_RSFT
-                                         &mo 1     &mo 2       &kp TAB   &kp TAB   &mo 3      &kp DEL >;};
+                                           &mo 1       &mo 2   &kp TAB   &kp TAB   &mo 3      &kp DEL >;};
 
     // ############################################################  RAISE ########################################################################
     raise_layer { bindings = <
@@ -898,13 +898,19 @@
           ;
     )
 
-    // SET LAYERS 'ON' ONLY WHILE PRESSED
+    // TRI-LAYERS (SET LAYERS 'ON' ONLY WHILE PRESSED)
     // ----------------------------------------------------------------------
-    // BASE
-    // LOWER
-    // RAISE
-    // ADJUST
-    // SUPER
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer { // HYPER
+            if-layers = <1 3>;
+            then-layer = <4>;
+        };
+        tri_layer { // CONFIG
+            if-layers = <1 3>;
+            then-layer = <4>;
+        };
+    };
 
     // SPECIAL LAYERS 
     // ----------------------------------------------------------------------

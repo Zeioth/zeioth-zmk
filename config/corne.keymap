@@ -907,8 +907,8 @@
             then-layer = <4>;
         };
         tri_layer { // CONFIG
-            if-layers = <1 3>;
-            then-layer = <4>;
+            if-layers = <1 5>;
+            then-layer = <5>;
         };
     };
 

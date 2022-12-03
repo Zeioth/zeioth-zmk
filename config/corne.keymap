@@ -70,10 +70,10 @@
 
     // ############################################################  ARROW ########################################################################
     arrow_layer { bindings = <
-       &none &none &none &none &none &none    &none  &none &none &none &none &none
-       &none &none &none &none &none &none    &none  &none &none &none &none &none
-       &none &none &none &none &none &kp UP   &kp UP &none &none &none &none &none
-                &kp LEFT &kp DOWN &kp RIGHT   &kp LEFT &kp DOWN &kp RIGHT >;};
+       &CKC_EXIT_ARROW &none &none    &kp UP   &none     &none   &none  &none    &kp UP   &none     &none &CKC_EXIT_ARROW
+       &CKC_EXIT_ARROW &none &kp LEFT &kp DOWN &kp RIGHT &none   &none  &kp LEFT &kp DOWN &kp RIGHT &none &CKC_EXIT_ARROW
+       &CKC_EXIT_ARROW &none &none    &none    &none    &kp UP   &kp UP &none    &none    &none     &none &CKC_EXIT_ARROW
+                                   &kp LEFT &kp DOWN &kp RIGHT   &kp LEFT &kp DOWN &kp RIGHT >;};
 
     // ############################################################  CONFIG ########################################################################
     config_layer { bindings = <

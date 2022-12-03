@@ -21,8 +21,8 @@
 #define LOWER   2
 #define RAISE   3
 #define HYPER   4
-#define CONFIG  5
-#define ARROW   6
+#define ARROW   5
+#define CONFIG  6
 #define NONE    0
 
 
@@ -46,7 +46,7 @@
        &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &I3_KILL   &I3_XKILL   &kp K_NEXT &kp K_PREV &kp K_PP       &M_PWMENU &kp RALT
        &kp LCTRL &M_WS7       &M_WS1       &M_WS2       &M_WS3       &I3_FS   &I3_WINTAB  &M_WS4     &M_WS5     &M_WS6         &M_WS8    &mt LALT ESC
        &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE     &I3_SPAD    &I3_LYM   &I3_FLOAT   &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET &kp RSHFT
-                                              &mo 1        &mo 2      &mo 5   &none       &mo 3      &mt LALT ESC >;};
+                                              &mo 1        &mo 2      &mo 6   &none       &mo 3      &mt LALT ESC >;};
     // ############################################################  LOWER ########################################################################
     lower_layer { bindings = <
        &kp LGUI  &kp N4       &kp N3       &kp N2       &kp N1          &kp N5         &kp N0   &kp N6   &kp N7 &kp N8    &kp N9 &kp RALT
@@ -63,7 +63,7 @@
 
     // ############################################################  HYPER ########################################################################
     hyper_layer { bindings = <
-       &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+      &M_WEATHER &M_CBACKUP &M_UPDATE_PACKAGES &M_ROFI_SHORTCUTS &M_ROFI_EMOJI &M_FILEX   &M_RANGER &none  &none &none &M_VIM &M_ROFI_MANUALS
        &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
        &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                                &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;};

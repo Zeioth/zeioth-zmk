@@ -63,10 +63,10 @@
 
     // ############################################################  HYPER ########################################################################
     hyper_layer { bindings = <
-      &M_WEATHER &M_CBACKUP &M_UPDATE_PACKAGES &M_ROFI_SHORTCUTS &M_ROFI_EMOJI &M_FILEX   &M_RANGER &none  &none &none &M_VIM &M_ROFI_MANUALS
-       &kp LCTRL &kp F11   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp F12 &kp GRAVE
-       &kp LSHFT &kp F4   &kp F3 &kp F2   &kp F1   &kp F5       &kp F10 &kp F6  &kp F7        &kp F8 &kp F9 &CKC_RSFT
-                               &kp LGUI &trans   &kp SPACE      &kp RET   &trans    &kp RALT >;};
+      &M_WEATHER &M_CBACKUP &M_UPDATE_PACKAGES &M_ROFI_SHORTCUTS  &M_ROFI_EMOJI &M_FILEX   &M_RANGER &none  &none  &none  &M_VIM  &M_ROFI_MANUALS
+       &kp LCTRL &kp F11    &M_ROFI_DOCS       &M_ROFI_ACTIVITIES &M_ROFI        &M_CALC   &none     &none  &none  &none  &kp F12 &kp GRAVE
+       &kp LSHFT &kp F4     &kp F3             &kp F2             &kp F1          &kp F5   &kp F10   &kp F6 &kp F7 &kp F8 &kp F9  &CKC_RSFT
+                                               &none              &mo 2            &none   &none     &none  &kp RALT >;};
 
     // ############################################################  ARROW ########################################################################
     arrow_layer { bindings = <

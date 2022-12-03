@@ -56,10 +56,10 @@
 
     // ############################################################  RAISE ########################################################################
     raise_layer { bindings = <
-       &kp LGUI  &VIM_DIT &VIM_DIP &VIM_DIS &VIM_DIW &VIM_DIB   &kp HOME    &kp END   &kp PAGE_DOWN   &kp PAGE_UP  &none &none
-       &kp LCTRL &VIM_CIT &VIM_CIP &VIM_CIS &VIM_CIW &VIM_CIW   &kp MINUS   &kp EQUAL &kp LBKT        &kp RBKT     &kp BSLH &kp GRAVE
-       &kp LSHFT &VIM_VIT &VIM_VIP &VIM_VIS &VIM_VIW &VIM_VIB   &kp UNDER   &kp PLUS  &kp LBRC        &kp RBRC     &kp PIPE &kp TILDE
-                                 &mo 1      &mo 2    &kp TAB    &CKC_CTRLBS &mo 3     &kp DEL >;};
+       &kp LGUI  &VIM_DIT &VIM_DIP &VIM_DIS &VIM_DIW &VIM_DIB   &kp HOME    &kp END  &kp PAGE_DOWN &kp PAGE_UP &none    &none
+       &kp LCTRL &VIM_CIT &VIM_CIP &VIM_CIS &VIM_CIW &VIM_CIW   &kp LEFT    &kp DOWN &kp UP        &kp RIGHT   &none    &none
+       &kp LSHFT &VIM_VIT &VIM_VIP &VIM_VIS &VIM_VIW &VIM_VIB   &none       &VIM_GMD &VIM_GMU      &VIM_GTD    &VIM_GTU &CKC_RSFT
+                                      &mo 1 &mo 2 &CKC_CTRLBS   &CKC_CTRLBS &mo 3    &none >;};
 
     // ############################################################  HYPER ########################################################################
     hyper_layer { bindings = <
@@ -599,14 +599,14 @@
           , <&macro_release &kp LSHFT>
           ;
     )
-    ZMK_MACRO(VIM_GDM, // Go method - down [m
+    ZMK_MACRO(VIM_GMD, // Go method - down [m
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>
           , <&macro_release &kp LSHFT>
           ;
     )
-    ZMK_MACRO(VIM_GDU, // Go method - up ]m
+    ZMK_MACRO(VIM_GMU, // Go method - up ]m
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>

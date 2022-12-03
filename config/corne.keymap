@@ -64,9 +64,9 @@
     // ############################################################  HYPER ########################################################################
     hyper_layer { bindings = <
       &M_WEATHER &M_CBACKUP &M_UPDATE_PACKAGES &M_ROFI_SHORTCUTS &M_ROFI_EMOJI &M_FILEX   &M_RANGER &none  &none &none &M_VIM &M_ROFI_MANUALS
-       &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-       &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                               &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT >;};
+       &kp LCTRL &kp F11   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp F12 &kp GRAVE
+       &kp LSHFT &kp F4   &kp F3 &kp F2   &kp F1   &kp F5       &kp F10 &kp F6  &kp F7        &kp F8 &kp F9 &CKC_RSFT
+                               &kp LGUI &trans   &kp SPACE      &kp RET   &trans    &kp RALT >;};
 
     // ############################################################  ARROW ########################################################################
     arrow_layer { bindings = <

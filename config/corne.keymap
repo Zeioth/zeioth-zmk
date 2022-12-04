@@ -13,6 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include "../zmk-nodefree-config/helper.h"
 
 // Layers
 // ---------------------------------------
@@ -76,7 +77,7 @@
                                    &kp LEFT &kp DOWN &kp RIGHT   &kp LEFT &kp DOWN &kp RIGHT >;};
 
     // ############################################################  CONFIG ########################################################################
-    // Note: We've removed RGB controls from this layer because we don't use them anymore. Feel free to re-add them if you need.
+    // Note: We've removed RGB controls from this layer because we don't use them anymore. Feel free to re-add them if you need them.
     config_layer { bindings = <
        &none &none        &none        &none        &none        &none          &none &none   &none       &none &none &none
        &none &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_SEL 4   &none &M_HELP &M_VIM_HELP &none &none &none
@@ -86,6 +87,19 @@
   };// END KEYMAPS
 
 
+  // START BEHAVIORS
+  // #########################################################################
+  behaviors {
+      CKC_BSPC: CKC_BSPC { // BACKSPACE AND DEL
+          compatible = "zmk,behavior-mod-morph";
+          label = "CKC_BSPC";
+          #binding-cells = <0>;
+          bindings = <&kp BACKSPACE>, <&kp DEL>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+  }; // END BEHAVIORS
+
+
   // START MACROS
   // #########################################################################
   macros {
@@ -93,13 +107,6 @@
     // BASE LAYER MACROS 
     // -----------------------------------------------------------------------
     ZMK_MACRO(CKC_CTRLBS, // CTRL + BACKSPACE
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_BSPC, // BACKSPACE AND DEL
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>

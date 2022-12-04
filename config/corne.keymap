@@ -76,6 +76,7 @@
                                    &kp LEFT &kp DOWN &kp RIGHT   &kp LEFT &kp DOWN &kp RIGHT >;};
 
     // ############################################################  CONFIG ########################################################################
+    // Note: We've removed RGB controls from this layer because we don't use them anymore. Feel free to re-add them if you need.
     config_layer { bindings = <
        &none &none        &none        &none        &none        &none          &none &none   &none       &none &none &none
        &none &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_SEL 4   &none &M_HELP &M_VIM_HELP &none &none &none

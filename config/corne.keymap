@@ -49,7 +49,7 @@
 
 // BACKSPACE AND DEL
 ZMK_BEHAVIOR(CKC_BSPC, mod_morph,
-    bindings = <&lt SYS BSPC>, <&kp DEL>;
+    bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 // END MACROS

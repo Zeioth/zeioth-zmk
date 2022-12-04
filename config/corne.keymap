@@ -27,7 +27,7 @@
 #define NONE    0
 
 
-ZMK_BEHAVIOR(CPC_BSPC, mod_morph,
+ZMK_BEHAVIOR(CKC_BSPC, mod_morph,
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )

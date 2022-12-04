@@ -28,9 +28,10 @@
 
 
 ZMK_BEHAVIOR(CKC_BSPC, mod_morph,
-    bindings = <&kp BSPC>, <&kp DEL>;
+    bindings = <&lt SYS BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+
 
 
 / { // START KEYBOARD

@@ -27,13 +27,6 @@
 #define NONE    0
 
 
-ZMK_BEHAVIOR(CKC_BSPC, mod_morph,
-    bindings = <&lt SYS BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-
-
 / { // START KEYBOARD
 
 
@@ -101,6 +94,13 @@ ZMK_BEHAVIOR(CKC_BSPC, mod_morph,
     // BASE LAYER MACROS 
     // -----------------------------------------------------------------------
     ZMK_MACRO(CKC_CTRLBS, // CTRL + BACKSPACE
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    )
+    ZMK_MACRO(CKC_BSPC, // BACKSPACE AND DEL
       bindings
           = <&macro_press &kp LSHFT>
           , <&macro_tap &kp Z &kp M &kp K>

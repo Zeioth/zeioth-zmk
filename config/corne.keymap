@@ -27,6 +27,12 @@
 #define NONE    0
 
 
+ZMK_BEHAVIOR(CPC_BSPC, mod_morph,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+
 / { // START KEYBOARD
 
 
@@ -85,19 +91,6 @@
                                                             &none &none &none   &none &none &none >;};
 
   };// END KEYMAPS
-
-
-  // START BEHAVIORS
-  // #########################################################################
-  behaviors {
-      CKC_BSPC: CKC_BSPC { // BACKSPACE AND DEL
-          compatible = "zmk,behavior-mod-morph";
-          label = "CKC_BSPC";
-          #binding-cells = <0>;
-          bindings = <&kp BACKSPACE>, <&kp DEL>;
-          mods = <(MOD_LSFT|MOD_RSFT)>;
-      };
-  }; // END BEHAVIORS
 
 
   // START MACROS

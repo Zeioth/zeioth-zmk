@@ -68,10 +68,10 @@ ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
     bindings = <&kp LGUI>, <&kp N8>;
 )
 ZMK_BEHAVIOR(M_LOCK, macro, // LOCK SESSION
-    bindings = <&kp LGUI>, <&kp N8>;
+    bindings = <&kp LS(LG(L))>;
 )
 ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU
-    bindings = <&kp LGUI>, <&kp N8>;
+    bindings = <&kp LS(LG(E))>;
 )
 
 / { // START KEYBOARD

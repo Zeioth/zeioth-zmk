@@ -27,6 +27,16 @@
 #define NONE    0
 
 
+// Setting aliases (Si borras esto, el build fallará)
+// ---------------------------------------
+#define QUICK_TAP_MS 175
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+
 // START MACROS
 // ---------------------------------------
 

@@ -5,6 +5,7 @@
 /* PERSONAL NOTES: 
  1. On vim you can enable C syntax for this file:
     :set syntax=perl 
+ 2.Keep only 1 space before the comments, or it will fail to compile.
 */
 
 
@@ -25,6 +26,7 @@
 #define ARROW   5
 #define CONFIG  6
 #define NONE    0
+
 
 
 // BASE LAYER MACROS 
@@ -73,10 +75,10 @@ ZMK_BEHAVIOR(M_LOCK, macro, // LOCK SESSION
 ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU
     bindings = <&kp LS(LG(E))>;
 )
-ZMK_BEHAVIOR(M_HELP, macro, // OPEN KEYBOARD MANUAL
+ZMK_BEHAVIOR(M_HELP, macro, // LOCK SESSION
     bindings = <&kp LS(LG(H))>;
 )
-ZMK_BEHAVIOR(M_VIM_HELP, macro, // OPEN VIM MANUAL
+ZMK_BEHAVIOR(M_VIM_HELP, macro, // POWER MENU
     bindings = <&kp LS(LG(V))>;
 )
 

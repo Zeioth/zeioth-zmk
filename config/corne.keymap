@@ -43,28 +43,28 @@ ZMK_BEHAVIOR(CKC_RSHFT, mod_morph, // Enables ARROW MODE when pressed during LSH
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 1
+ZMK_BEHAVIOR(M_WS1, macro, // WORKSPACE 1
     bindings = <&kp LGUI>, <&kp N1>;
 )
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 2
+ZMK_BEHAVIOR(M_WS2, macro, // WORKSPACE 2
     bindings = <&kp LGUI>, <&kp N2>;
 )
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 3
+ZMK_BEHAVIOR(M_WS3, macro, // WORKSPACE 3
     bindings = <&kp LGUI>, <&kp N3>;
 )
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 4
+ZMK_BEHAVIOR(M_WS4, macro, // WORKSPACE 4
     bindings = <&kp LGUI>, <&kp N4>;
 )
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 5
+ZMK_BEHAVIOR(M_WS5, macro, // WORKSPACE 5
     bindings = <&kp LGUI>, <&kp N5>;
 )
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 6
+ZMK_BEHAVIOR(M_WS6, macro, // WORKSPACE 6
     bindings = <&kp LGUI>, <&kp N6>;
 )
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 7
+ZMK_BEHAVIOR(M_WS7, macro, // WORKSPACE 7
     bindings = <&kp LGUI>, <&kp N7>;
 )
-ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 8
+ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
     bindings = <&kp LGUI>, <&kp N8>;
 )
 
@@ -135,62 +135,6 @@ ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 8
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
 
-    ZMK_MACRO(M_WS1, // WORKSPACE 1
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WS2, // WORKSPACE 2
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WS3, // WORKSPACE 3
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WS4, // WORKSPACE 4
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WS5, // WORKSPACE 5
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WS6, // WORKSPACE 6
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WS7, // WORKSPACE 7
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WS8, // WORKSPACE 8
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(F_WL, // IDK
       bindings
           = <&macro_press &kp LSHFT>

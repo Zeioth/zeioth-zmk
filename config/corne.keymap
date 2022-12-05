@@ -27,13 +27,31 @@
 #define NONE    0
 
 
+// Setting aliases (Muevelo a otro fichero)
+// ---------------------------------------
+#define QUICK_TAP_MS 175
+&sk {  // sticky-key config
+    release-after-ms = <600>;  // release after 0.6s
+    quick-release;             // no double capitalization when rolling keys
+};
+&sl {  // sticky-layer config
+    ignore-modifiers;
+};
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+
 // START MACROS
 // ---------------------------------------
+
+// BACKSPACE AND DEL
 ZMK_BEHAVIOR(CKC_BSPC, mod_morph, // BACKSPACE AND DEL
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-
 // END MACROS
 
 

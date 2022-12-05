@@ -102,13 +102,6 @@ ZMK_BEHAVIOR(CKC_BSPC, mod_morph, // BACKSPACE AND DEL
 
     // BASE LAYER MACROS 
     // -----------------------------------------------------------------------
-    ZMK_MACRO(CKC_CTRLBS, // CTRL + BACKSPACE
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(CKC_RLOCK, // RAISE LOCK and ARROW MODE (Currently disabled)
       bindings
           = <&macro_press &kp LSHFT>

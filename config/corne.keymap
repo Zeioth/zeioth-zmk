@@ -68,6 +68,12 @@ ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)
 ZMK_BEHAVIOR(M_HELP, macro, bindings = <&kp LS(LG(H))>;)
 // SHOW VIM HELP
 ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;)
+// I3 FULL SCREEN
+ZMK_BEHAVIOR(I3_FS, macro, bindings = <&kp LG(F)>;)
+// I3 DISPLAY MODE
+ZMK_BEHAVIOR(I3_DISPLAYS, macro, bindings = <&kp LS(LG(D))>;)
+// I3 SCREENSHOT MODE
+ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)
 
 / { // START KEYBOARD
 
@@ -136,27 +142,27 @@ ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;)
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
 
-    ZMK_MACRO(I3_FS, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_DISPLAYS, // MODE: DISPLAYS
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_SCREENSHOT, // MODE: SCREENSHOTS
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
+    /* ZMK_MACRO(I3_FS, // IDK */
+    /*   bindings */
+    /*       = <&macro_press &kp LSHFT> */
+    /*       , <&macro_tap &kp Z &kp M &kp K> */
+    /*       , <&macro_release &kp LSHFT> */
+    /*       ; */
+    /* ) */
+    /* ZMK_MACRO(I3_DISPLAYS, // MODE: DISPLAYS */
+    /*   bindings */
+    /*       = <&macro_press &kp LSHFT> */
+    /*       , <&macro_tap &kp Z &kp M &kp K> */
+    /*       , <&macro_release &kp LSHFT> */
+    /*       ; */
+    /* ) */
+    /* ZMK_MACRO(I3_SCREENSHOT, // MODE: SCREENSHOTS */
+    /*   bindings */
+    /*       = <&macro_press &kp LSHFT> */
+    /*       , <&macro_tap &kp Z &kp M &kp K> */
+    /*       , <&macro_release &kp LSHFT> */
+    /*       ; */
+    /* ) */
     ZMK_MACRO(I3_RESIZE, // MODE: RESIZE TILE SIZE
       bindings
           = <&macro_press &kp LSHFT>

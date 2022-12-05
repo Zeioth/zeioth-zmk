@@ -64,10 +64,10 @@ ZMK_BEHAVIOR(M_WS8, macro, bindings = <&kp LGUI>, <&kp N8>;)
 ZMK_BEHAVIOR(M_LOCK, macro, bindings = <&kp LS(LG(L))>;)
 // POWER MENU
 ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)
-/* // SHOW KEYBOARD HELP */
-/* ZMK_BEHAVIOR(M_HELP, macro, bindings = <&kp LS(LG(H))>;) */
-/* // SHOW VIM HELP */
-/* ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;) */
+// SHOW KEYBOARD HELP
+ZMK_BEHAVIOR(M_HELP, macro, bindings = <&kp LS(LG(H))>;)
+// SHOW VIM HELP
+ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;)
 
 / { // START KEYBOARD
 
@@ -88,7 +88,7 @@ ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)
     super_layer { bindings = <
        &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &I3_KILL   &I3_XKILL   &kp K_NEXT &kp K_PREV &kp K_PP       &M_PWMENU &kp RALT
        &kp LCTRL &M_WS7       &M_WS1       &M_WS2       &M_WS3       &I3_FS   &I3_WINTAB  &M_WS4     &M_WS5     &M_WS6         &M_WS8    &mt LALT ESC
-       &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE     &I3_SPAD      &noen   &I3_FLOAT   &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET &kp RSHFT
+       &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE     &I3_SPAD      &none   &I3_FLOAT   &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET &kp RSHFT
                                               &mo 1        &mo 2      &mo 6   &none       &mo 3      &mt LALT ESC >;};
     // ############################################################  LOWER ########################################################################
     lower_layer { bindings = <
@@ -136,20 +136,6 @@ ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
 
-    ZMK_MACRO(M_HELP, // OPEN USAGE INSTRUCTIONS FOR THIS FIRMWARE.
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_VIM_HELP, // OPEN USAGE INSTRUCTIONS FOR OUT VIM CONFIG.
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(I3_FS, // IDK
       bindings
           = <&macro_press &kp LSHFT>

@@ -28,59 +28,46 @@
 #define NONE    0
 
 
-
 // BASE LAYER MACROS 
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(CKC_CTRLBS, macro, // CTRL+BACKSPACE
-    bindings = <&kp LC(BSPC)>;
-)
-ZMK_BEHAVIOR(CKC_BSPC, mod_morph, // BACKSPACE AND DEL
-    bindings = <&kp BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-ZMK_BEHAVIOR(CKC_RSFT, mod_morph, // Enables ARROW MODE when pressed during LSHIFT.
-    bindings = <&kp RSHFT>, <&mo 5>;
-    mods = <(MOD_LSFT)>;
+// CTRL+BACKSPACE
+ZMK_BEHAVIOR(CKC_CTRLBS, macro, bindings = <&kp LC(BSPC)>;)
+// BACKSPACE AND DEL
+ZMK_BEHAVIOR(CKC_BSPC, mod_morph, 
+  bindings = <&kp BSPC>, <&kp DEL>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// Enables ARROW MODE when pressed during LSHIFT.
+ZMK_BEHAVIOR(CKC_RSFT, mod_morph,
+  bindings = <&kp RSHFT>, <&mo 5>;
+  mods = <(MOD_LSFT)>;
 )
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(M_WS1, macro, // WORKSPACE 1
-    bindings = <&kp LGUI>, <&kp N1>;
-)
-ZMK_BEHAVIOR(M_WS2, macro, // WORKSPACE 2
-    bindings = <&kp LGUI>, <&kp N2>;
-)
-ZMK_BEHAVIOR(M_WS3, macro, // WORKSPACE 3
-    bindings = <&kp LGUI>, <&kp N3>;
-)
-ZMK_BEHAVIOR(M_WS4, macro, // WORKSPACE 4
-    bindings = <&kp LGUI>, <&kp N4>;
-)
-ZMK_BEHAVIOR(M_WS5, macro, // WORKSPACE 5
-    bindings = <&kp LGUI>, <&kp N5>;
-)
-ZMK_BEHAVIOR(M_WS6, macro, // WORKSPACE 6
-    bindings = <&kp LGUI>, <&kp N6>;
-)
-ZMK_BEHAVIOR(M_WS7, macro, // WORKSPACE 7
-    bindings = <&kp LGUI>, <&kp N7>;
-)
-ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
-    bindings = <&kp LGUI>, <&kp N8>;
-)
-ZMK_BEHAVIOR(M_LOCK, macro, // LOCK SESSION
-    bindings = <&kp LS(LG(L))>;
-)
-ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU
-    bindings = <&kp LS(LG(E))>;
-)
-ZMK_BEHAVIOR(M_HELP, macro, // LOCK SESSION
-    bindings = <&kp LS(LG(H))>;
-)
-ZMK_BEHAVIOR(M_VIM_HELP, macro, // POWER MENU
-    bindings = <&kp LS(LG(V))>;
-)
+// WORKSPACE 1
+ZMK_BEHAVIOR(M_WS1, macro, bindings = <&kp LGUI>, <&kp N1>;)
+// WORKSPACE 2
+ZMK_BEHAVIOR(M_WS2, macro, bindings = <&kp LGUI>, <&kp N2>;)
+// WORKSPACE 3
+ZMK_BEHAVIOR(M_WS3, macro, bindings = <&kp LGUI>, <&kp N3>;)
+// WORKSPACE 4
+ZMK_BEHAVIOR(M_WS4, macro, bindings = <&kp LGUI>, <&kp N4>;)
+// WORKSPACE 5
+ZMK_BEHAVIOR(M_WS5, macro, bindings = <&kp LGUI>, <&kp N5>;)
+// WORKSPACE 6
+ZMK_BEHAVIOR(M_WS6, macro, bindings = <&kp LGUI>, <&kp N6>;)
+// WORKSPACE 7
+ZMK_BEHAVIOR(M_WS7, macro, bindings = <&kp LGUI>, <&kp N7>;)
+// WORKSPACE 8
+ZMK_BEHAVIOR(M_WS8, macro, bindings = <&kp LGUI>, <&kp N8>;)
+// LOCK SESSION
+ZMK_BEHAVIOR(M_LOCK, macro, bindings = <&kp LS(LG(L))>;)
+// POWER MENU
+ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)
+// LOCK SESSION
+ZMK_BEHAVIOR(M_HELP, macro, bindings = <&kp LS(LG(H))>;)
+// POWER MENU
+ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;)
 
 / { // START KEYBOARD
 

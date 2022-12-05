@@ -27,6 +27,8 @@
 #define NONE    0
 
 
+// BASE LAYER MACROS 
+// -----------------------------------------------------------------------
 ZMK_BEHAVIOR(CKC_CTRLBS, macro, // CTRL+BACKSPACE
     bindings = <&kp LC(BSPC)>;
 )
@@ -39,6 +41,32 @@ ZMK_BEHAVIOR(CKC_RSHFT, mod_morph, // Enables ARROW MODE when pressed during LSH
     mods = <(MOD_LSFT)>;
 )
 
+// SUPER LAYER MACROS 
+// -----------------------------------------------------------------------
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 1
+    bindings = <&kp LGUI>, <&kp N1>;
+)
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 2
+    bindings = <&kp LGUI>, <&kp N2>;
+)
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 3
+    bindings = <&kp LGUI>, <&kp N3>;
+)
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 4
+    bindings = <&kp LGUI>, <&kp N4>;
+)
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 5
+    bindings = <&kp LGUI>, <&kp N5>;
+)
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 6
+    bindings = <&kp LGUI>, <&kp N6>;
+)
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 7
+    bindings = <&kp LGUI>, <&kp N7>;
+)
+ZMK_BEHAVIOR(M_WS1, macro, // Go to workspace 8
+    bindings = <&kp LGUI>, <&kp N8>;
+)
 
 / { // START KEYBOARD
 
@@ -103,24 +131,6 @@ ZMK_BEHAVIOR(CKC_RSHFT, mod_morph, // Enables ARROW MODE when pressed during LSH
   // START MACROS
   // #########################################################################
   macros {
-
-    // BASE LAYER MACROS 
-    // -----------------------------------------------------------------------
-    ZMK_MACRO(CKC_RLOCK, // RAISE LOCK and ARROW MODE (Currently disabled)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_RSFT, // RSHIFT and ARROW MODE (bug RShift doesn't work)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-
 
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------

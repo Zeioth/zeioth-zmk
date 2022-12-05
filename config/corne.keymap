@@ -30,8 +30,6 @@
 // START MACROS
 // ---------------------------------------
 ZMK_BEHAVIOR(CKC_CTRLBS, macro, // CTRL + BACKSPACE
-    wait-ms = <100>;
-    tap-ms = <5>;
     bindings = <&kp LG(X) &kp U &kp S>;
 )
 ZMK_BEHAVIOR(CKC_BSPC, mod_morph, // BACKSPACE AND DEL

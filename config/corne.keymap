@@ -27,10 +27,8 @@
 #define NONE    0
 
 
-// Setting aliases (Si borras esto, el build fallará)
+// Setting aliases (This is needed, or )
 // ---------------------------------------
-#define QUICK_TAP_MS 175
-
 
 // START MACROS
 // ---------------------------------------

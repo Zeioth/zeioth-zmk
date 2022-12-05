@@ -70,6 +70,9 @@ ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
 ZMK_BEHAVIOR(M_LOCK, macro, // LOCK SESSION
     bindings = <&kp LGUI>, <&kp N8>;
 )
+ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU
+    bindings = <&kp LGUI>, <&kp N8>;
+)
 
 / { // START KEYBOARD
 
@@ -145,13 +148,13 @@ ZMK_BEHAVIOR(M_LOCK, macro, // LOCK SESSION
     /*       , <&macro_release &kp LSHFT> */
     /*       ; */
     /* ) */
-    ZMK_MACRO(M_PWMENU, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
+    /* ZMK_MACRO(M_PWMENU, // IDK */
+    /*   bindings */
+    /*       = <&macro_press &kp LSHFT> */
+    /*       , <&macro_tap &kp Z &kp M &kp K> */
+    /*       , <&macro_release &kp LSHFT> */
+    /*       ; */
+    /* ) */
     ZMK_MACRO(I3_LYM, // LAYOUT MANAGER (Currently disabled)
       bindings
           = <&macro_press &kp LSHFT>

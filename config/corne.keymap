@@ -73,7 +73,7 @@ ZMK_BEHAVIOR(M_LOCK, macro, // LOCK SESSION
 ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU
     bindings = <&kp LS(LG(E))>;
 )
-ZMK_BEHAVIOR(M_HELP, macro,     // OPEN KEYBOARD MANUAL
+ZMK_BEHAVIOR(M_HELP, macro, // OPEN KEYBOARD MANUAL
     bindings = <&kp LS(LG(H))>;
 )
 ZMK_BEHAVIOR(M_VIM_HELP, macro, // OPEN VIM MANUAL
@@ -147,20 +147,6 @@ ZMK_BEHAVIOR(M_VIM_HELP, macro, // OPEN VIM MANUAL
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
 
-    /* ZMK_MACRO(M_HELP, // OPEN USAGE INSTRUCTIONS FOR THIS FIRMWARE. */
-    /*   bindings */
-    /*       = <&macro_press &kp LSHFT> */
-    /*       , <&macro_tap &kp Z &kp M &kp K> */
-    /*       , <&macro_release &kp LSHFT> */
-    /*       ; */
-    /* ) */
-    /* ZMK_MACRO(M_VIM_HELP, // OPEN USAGE INSTRUCTIONS FOR OUT VIM CONFIG. */
-    /*   bindings */
-    /*       = <&macro_press &kp LSHFT> */
-    /*       , <&macro_tap &kp Z &kp M &kp K> */
-    /*       , <&macro_release &kp LSHFT> */
-    /*       ; */
-    /* ) */
     ZMK_MACRO(I3_FS, // IDK
       bindings
           = <&macro_press &kp LSHFT>

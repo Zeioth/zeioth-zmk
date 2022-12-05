@@ -74,6 +74,12 @@ ZMK_BEHAVIOR(I3_FS, macro, bindings = <&kp LG(F)>;)
 ZMK_BEHAVIOR(I3_DISPLAYS, macro, bindings = <&kp LS(LG(D))>;)
 // I3 SCREENSHOT MODE
 ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)
+// I3 RESIZE MODE
+ZMK_BEHAVIOR(I3_RESIZE, macro, bindings = <&kp LS(LG(R))>;)
+// I3 MOVE MODE
+ZMK_BEHAVIOR(I3_MOVE, macro, bindings = <&kp LS(LG(A))>;)
+// I3 SCRATCHPAD (TODO: ES_MINS NO EXISTE ASIQUE AVERIGUA LA TECLA)
+ZMK_BEHAVIOR(I3_SPAD, macro, bindings = <&kp LS(LG(S))>;)
 
 / { // START KEYBOARD
 
@@ -142,48 +148,6 @@ ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
 
-    /* ZMK_MACRO(I3_FS, // IDK */
-    /*   bindings */
-    /*       = <&macro_press &kp LSHFT> */
-    /*       , <&macro_tap &kp Z &kp M &kp K> */
-    /*       , <&macro_release &kp LSHFT> */
-    /*       ; */
-    /* ) */
-    /* ZMK_MACRO(I3_DISPLAYS, // MODE: DISPLAYS */
-    /*   bindings */
-    /*       = <&macro_press &kp LSHFT> */
-    /*       , <&macro_tap &kp Z &kp M &kp K> */
-    /*       , <&macro_release &kp LSHFT> */
-    /*       ; */
-    /* ) */
-    /* ZMK_MACRO(I3_SCREENSHOT, // MODE: SCREENSHOTS */
-    /*   bindings */
-    /*       = <&macro_press &kp LSHFT> */
-    /*       , <&macro_tap &kp Z &kp M &kp K> */
-    /*       , <&macro_release &kp LSHFT> */
-    /*       ; */
-    /* ) */
-    ZMK_MACRO(I3_RESIZE, // MODE: RESIZE TILE SIZE
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_MOVE, // MODE: MOVE TILE
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_SPAD, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(I3_WINTAB, // SWAYR LIST ALL TILES
       bindings
           = <&macro_press &kp LSHFT>

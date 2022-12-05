@@ -73,9 +73,9 @@ ZMK_BEHAVIOR(M_LOCKS, macro, // LOCK SESSION → Extra shortcut
 /* ZMK_BEHAVIOR(M_LOCKS, macro, // LOCK SESSION → Extra shortcut */
 /*     bindings = <&kp LSHFT>, <&kp LGUI>, <&kp L>; */
 /* ) */
-ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU
-    bindings = <&kp LSHFT>, &kp LGUI>, <&kp E>;
-)
+/* ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU */
+/*     bindings = <&kp LSHFT>, &kp LGUI>, <&kp E>; */
+/* ) */
 
 / { // START KEYBOARD
 

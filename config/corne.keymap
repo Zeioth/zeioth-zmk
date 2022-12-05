@@ -67,6 +67,12 @@ ZMK_BEHAVIOR(M_WS7, macro, // WORKSPACE 7
 ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
     bindings = <&kp LGUI>, <&kp N8>;
 )
+ZMK_BEHAVIOR(M_LOCKS, macro, // LOCK SESSION → Extra shortcut
+    bindings = <&kp LSHFT>, &kp LGUI>, <&kp L>;
+)
+ZMK_BEHAVIOR(M_PWMENU, macro, // POWER MENU
+    bindings = <&kp LSHFT>, &kp LGUI>, <&kp E>;
+)
 
 / { // START KEYBOARD
 
@@ -81,11 +87,11 @@ ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
        &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &CKC_BSPC
        &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &CKC_ACCENT
        &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &CKC_RSFT
-                         &mo 1 &mo 2 &kp SPACE   &kp RET &mo 3 &mt LALT ESC >;};
+                         &mo 1 &mo 2 &kp space   &kp ret &mo 3 &mt lalt esc >;};
 
     // ############################################################  SUPER ########################################################################
     super_layer { bindings = <
-       &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &I3_KILL   &I3_XKILL   &kp K_NEXT &kp K_PREV &kp K_PP       &M_PWMENU &kp RALT
+       &kp LGUI  &M_LOCKS     &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &I3_KILL   &I3_XKILL   &kp K_NEXT &kp K_PREV &kp K_PP       &M_PWMENU &kp RALT
        &kp LCTRL &M_WS7       &M_WS1       &M_WS2       &M_WS3       &I3_FS   &I3_WINTAB  &M_WS4     &M_WS5     &M_WS6         &M_WS8    &mt LALT ESC
        &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE     &I3_SPAD    &I3_LYM   &I3_FLOAT   &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET &kp RSHFT
                                               &mo 1        &mo 2      &mo 6   &none       &mo 3      &mt LALT ESC >;};
@@ -134,49 +140,6 @@ ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
 
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
-
-    ZMK_MACRO(F_WL, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(F_WD, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(F_WU, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(F_WR, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_LOCK, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_PWMENU, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(I3_LYM, // LAYOUT MANAGER (Currently disabled)
       bindings
           = <&macro_press &kp LSHFT>

@@ -1,7 +1,7 @@
 # Zeioth zmk-config
 My wireless keyboard firmware
 
-## How to flash (Linux)
+## How to flash
 
 * Shortcut the pins grd/rst twice in < 500ms to enter flash mode. A blue led will turn on on the board.
 * A new device should have appeared in your computer.
@@ -21,5 +21,5 @@ Under normal circumstances this should not be necessary, but it can be done with
 * https://docs.nicekeyboards.com/#/nice!nano/troubleshooting
 * https://zmk.dev/docs/user-setup
 
-## Dependencies
-We are currently using [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config#international-characters), which cleans the code quite a bit.
+## Credits
+This firmware uses the helper [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config) by urob, to avoid boilerplate.

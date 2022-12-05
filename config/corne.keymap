@@ -29,6 +29,10 @@
 
 // START MACROS
 // ---------------------------------------
+// CTRL + BACKSPACE
+ZMK_BEHAVIOR(CKC_CTRLBS, macro, // CTRL + BACKSPACE
+    bindings = <&kp LC(BSPC)>;
+)
 ZMK_BEHAVIOR(CKC_BSPC, mod_morph, // BACKSPACE AND DEL
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;

@@ -67,6 +67,9 @@ ZMK_BEHAVIOR(M_WS7, macro, // WORKSPACE 7
 ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
     bindings = <&kp LGUI>, <&kp N8>;
 )
+ZMK_BEHAVIOR(M_LOCK, macro, // LOCK SESSION
+    bindings = <&kp LGUI>, <&kp N8>;
+)
 
 / { // START KEYBOARD
 
@@ -135,13 +138,13 @@ ZMK_BEHAVIOR(M_WS8, macro, // WORKSPACE 8
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
 
-    ZMK_MACRO(M_LOCK, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
+    /* ZMK_MACRO(M_LOCK, // IDK */
+    /*   bindings */
+    /*       = <&macro_press &kp LSHFT> */
+    /*       , <&macro_tap &kp Z &kp M &kp K> */
+    /*       , <&macro_release &kp LSHFT> */
+    /*       ; */
+    /* ) */
     ZMK_MACRO(M_PWMENU, // IDK
       bindings
           = <&macro_press &kp LSHFT>

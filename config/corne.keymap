@@ -51,57 +51,63 @@ ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&mo 5>;  mods = <(M
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(M_WS1, macro, bindings = <&kp LGUI>, <&kp N1>;)    // WORKSPACE 1
-ZMK_BEHAVIOR(M_WS2, macro, bindings = <&kp LGUI>, <&kp N2>;)    // WORKSPACE 2
-ZMK_BEHAVIOR(M_WS3, macro, bindings = <&kp LGUI>, <&kp N3>;)    // WORKSPACE 3
-ZMK_BEHAVIOR(M_WS4, macro, bindings = <&kp LGUI>, <&kp N4>;)    // WORKSPACE 4
-ZMK_BEHAVIOR(M_WS5, macro, bindings = <&kp LGUI>, <&kp N5>;)    // WORKSPACE 5
-ZMK_BEHAVIOR(M_WS6, macro, bindings = <&kp LGUI>, <&kp N6>;)    // WORKSPACE 6
-ZMK_BEHAVIOR(M_WS7, macro, bindings = <&kp LGUI>, <&kp N7>;)    // WORKSPACE 7
-ZMK_BEHAVIOR(M_WS8, macro, bindings = <&kp LGUI>, <&kp N8>;)    // WORKSPACE 8
-ZMK_BEHAVIOR(M_LOCK, macro, bindings = <&kp LS(LG(L))>;)        // LOCK SESSION
-ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)      // POWER MENU
-ZMK_BEHAVIOR(M_HELP, macro, bindings = <&kp LS(LG(H))>;)        // SHOW KEYBOARD HELP
-ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;)    // SHOW VIM HELP
-ZMK_BEHAVIOR(I3_FS, macro, bindings = <&kp LG(F)>;)             // I3 FULL SCREEN
-ZMK_BEHAVIOR(I3_DISPLAYS, macro, bindings = <&kp LS(LG(D))>;)   // I3 DISPLAY MODE
-ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;) // I3 SCREENSHOT MODE
-ZMK_BEHAVIOR(I3_RESIZE, macro, bindings = <&kp LS(LG(R))>;)     // I3 RESIZE MODE
-ZMK_BEHAVIOR(I3_MOVE, macro, bindings = <&kp LS(LG(A))>;)       // I3 MOVE MODE
-ZMK_BEHAVIOR(I3_SPAD, macro, bindings = <&kp LG(ES_MINS)>;)     // I3 SCRATCHPAD (CYCLE)
-ZMK_BEHAVIOR(I3_WINTAB, macro, bindings = <&kp LG(TAB)>;)       // I3 WINTAB
-ZMK_BEHAVIOR(I3_KILL, macro, bindings = <&kp LS(LG(B))>;)       // I3 KILL
-ZMK_BEHAVIOR(I3_XKILL, macro, bindings = <&kp LS(LG(J))>;)      // I3 XKILL
-ZMK_BEHAVIOR(I3_PW, macro, bindings = <&kp LG(L)>;)             // I3 PREVIOUS WINDOW
-ZMK_BEHAVIOR(I3_NW, macro, bindings = <&kp LG(COMMA)>;)         // I3 NEXT WINDOW
-ZMK_BEHAVIOR(I3_RESET, macro, bindings = <&kp LG(DOT)>;)        // I3 RESET
-ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)          // I3 FLOAT (TOGGLE)
+ZMK_BEHAVIOR(M_WS1,         macro, bindings = <&kp LG(N1)>;)      // WORKSPACE 1
+ZMK_BEHAVIOR(M_WS2,         macro, bindings = <&kp LG(N2)>;)      // WORKSPACE 2
+ZMK_BEHAVIOR(M_WS3,         macro, bindings = <&kp LG(N3)>;)      // WORKSPACE 3
+ZMK_BEHAVIOR(M_WS4,         macro, bindings = <&kp LG(N4)>;)      // WORKSPACE 4
+ZMK_BEHAVIOR(M_WS5,         macro, bindings = <&kp LG(N5)>;)      // WORKSPACE 5
+ZMK_BEHAVIOR(M_WS6,         macro, bindings = <&kp LG(N6)>;)      // WORKSPACE 6
+ZMK_BEHAVIOR(M_WS7,         macro, bindings = <&kp LG(N7)>;)      // WORKSPACE 7
+ZMK_BEHAVIOR(M_WS8,         macro, bindings = <&kp LG(N8)>;)      // WORKSPACE 8
+ZMK_BEHAVIOR(M_LOCK,        macro, bindings = <&kp LS(LG(L))>;)   // LOCK SESSION
+ZMK_BEHAVIOR(M_PWMENU,      macro, bindings = <&kp LS(LG(E))>;)   // POWER MENU
+ZMK_BEHAVIOR(M_HELP,        macro, bindings = <&kp LS(LG(H))>;)   // SHOW KEYBOARD HELP
+ZMK_BEHAVIOR(M_VIM_HELP,    macro, bindings = <&kp LS(LG(V))>;)   // SHOW VIM HELP
+ZMK_BEHAVIOR(I3_FS,         macro, bindings = <&kp LG(F)>;)       // I3 FULL SCREEN
+ZMK_BEHAVIOR(I3_DISPLAYS,   macro, bindings = <&kp LS(LG(D))>;)   // I3 DISPLAY MODE
+ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)   // I3 SCREENSHOT MODE
+ZMK_BEHAVIOR(I3_RESIZE,     macro, bindings = <&kp LS(LG(R))>;)   // I3 RESIZE MODE
+ZMK_BEHAVIOR(I3_MOVE,       macro, bindings = <&kp LS(LG(A))>;)   // I3 MOVE MODE
+ZMK_BEHAVIOR(I3_SPAD,       macro, bindings = <&kp LG(ES_MINS)>;) // I3 SCRATCHPAD (CYCLE)
+ZMK_BEHAVIOR(I3_WINTAB,     macro, bindings = <&kp LG(TAB)>;)     // I3 WINTAB
+ZMK_BEHAVIOR(I3_KILL,       macro, bindings = <&kp LS(LG(B))>;)   // I3 KILL
+ZMK_BEHAVIOR(I3_XKILL,      macro, bindings = <&kp LS(LG(J))>;)   // I3 XKILL
+ZMK_BEHAVIOR(I3_PW,         macro, bindings = <&kp LG(L)>;)       // I3 PREVIOUS WINDOW
+ZMK_BEHAVIOR(I3_NW,         macro, bindings = <&kp LG(COMMA)>;)   // I3 NEXT WINDOW
+ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LG(DOT)>;)     // I3 RESET
+ZMK_BEHAVIOR(I3_FLOAT,      macro, bindings = <&kp LG(K)>;)       // I3 FLOAT (TOGGLE)
 
 // LOWER LAYER MACROS
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(CKC_ACCENT,   mod_morph, bindings = <&kp ES_ACUT>, <&kp ES_GRV>;           mods = <(MOD_LSFT|MOD_RSFT)>;) // ´ and `
-ZMK_BEHAVIOR(CKC_HASH,     mod_morph, bindings = <&kp RA(N3)>, <&kp RA(N4)>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // #
-ZMK_BEHAVIOR(CKC_QUOT,     mod_morph, bindings = <&kp ES_QUOT>, <&kp LS(N3)>;           mods = <(MOD_LSFT|MOD_RSFT)>;) // ' and · (bullet)
-ZMK_BEHAVIOR(CKC_DQUOT,    mod_morph, bindings = <&kp LS(N2)>, <&kp LS(ES_ACUT)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // ]
+ZMK_BEHAVIOR(CKC_ACCENT,   mod_morph, bindings = <&kp ES_ACUT>,     <&kp ES_GRV>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // ´ and `
+ZMK_BEHAVIOR(CKC_HASH,     mod_morph, bindings = <&kp RA(N3)>,      <&kp RA(N4)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // #
+ZMK_BEHAVIOR(CKC_QUOT,     mod_morph, bindings = <&kp ES_QUOT>,     <&kp LS(N3)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // ' and · (bullet)
+ZMK_BEHAVIOR(CKC_DQUOT,    mod_morph, bindings = <&kp LS(N2)>,      <&kp LS(ES_ACUT)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ]
 ZMK_BEHAVIOR(CKC_QMA,      mod_morph, bindings = <&kp LS(ES_QUOT)>, <&kp LS(ES_IEXL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ? and ¿
-ZMK_BEHAVIOR(CKC_EXCLAM,   mod_morph, bindings = <&kp LS(N1)>, <&kp ES_IEXL>;           mods = <(MOD_LSFT|MOD_RSFT)>;) // ! and ¡
-ZMK_BEHAVIOR(CKC_PERC,     mod_morph, bindings = <&kp LS(N5)>, <&kp RA(N6)>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // % and ¬
-ZMK_BEHAVIOR(CKC_PLUS,     mod_morph, bindings = <&kp ES_PLUS>, <&kp RA(N2)>;           mods = <(MOD_LSFT|MOD_RSFT)>;) // +
-ZMK_BEHAVIOR(CKC_MINUS,    mod_morph, bindings = <&kp ES_MINS>, <&kp LS(ES_MINS)>;      mods = <(MOD_LSFT|MOD_RSFT)>;) // - and _
+ZMK_BEHAVIOR(CKC_EXCLAM,   mod_morph, bindings = <&kp LS(N1)>,      <&kp ES_IEXL>;      mods = <(MOD_LSFT|MOD_RSFT)>;) // ! and ¡
+ZMK_BEHAVIOR(CKC_PERC,     mod_morph, bindings = <&kp LS(N5)>,      <&kp RA(N6)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // % and ¬
+ZMK_BEHAVIOR(CKC_PLUS,     mod_morph, bindings = <&kp ES_PLUS>,     <&kp RA(N2)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // +
+ZMK_BEHAVIOR(CKC_MINUS,    mod_morph, bindings = <&kp ES_MINS>,     <&kp LS(ES_MINS)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // - and _
 ZMK_BEHAVIOR(CKC_ASTERISK, mod_morph, bindings = <&kp LS(ES_PLUS)>, <&kp LS(ES_GRV)>;   mods = <(MOD_LSFT|MOD_RSFT)>;) // * and ^
-ZMK_BEHAVIOR(CKC_SLASH,    mod_morph, bindings = <&kp LS(N7)>, <&kp RA(ES_MORD)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // '/' and '\'
-ZMK_BEHAVIOR(CKC_EQUAL,    mod_morph, bindings = <&kp LS(N0)>, <&kp LS(N0)>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // =
-ZMK_BEHAVIOR(CKC_LESS,     mod_morph, bindings = <&kp ES_LABK>, <&kp RA(Y)>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // < and ←
+ZMK_BEHAVIOR(CKC_SLASH,    mod_morph, bindings = <&kp LS(N7)>,      <&kp RA(ES_MORD)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // '/' and '\'
+ZMK_BEHAVIOR(CKC_EQUAL,    mod_morph, bindings = <&kp LS(N0)>,      <&kp LS(N0)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // =
+ZMK_BEHAVIOR(CKC_LESS,     mod_morph, bindings = <&kp ES_LABK>,     <&kp RA(Y)>;        mods = <(MOD_LSFT|MOD_RSFT)>;) // < and ←
 ZMK_BEHAVIOR(CKC_MORE,     mod_morph, bindings = <&kp LS(ES_LABK)>, <&kp RA(I)>;        mods = <(MOD_LSFT|MOD_RSFT)>;) // > and →
-ZMK_BEHAVIOR(CKC_O_PAR,    mod_morph, bindings = <&kp LS(N8)>, <&kp RA(E)>;             mods = <(MOD_LSFT|MOD_RSFT)>;) // ( and €
-ZMK_BEHAVIOR(CKC_C_PAR,    mod_morph, bindings = <&kp LS(N9)>, <&kp LS(N4)>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // ) and $
-ZMK_BEHAVIOR(CKC_AND,      mod_morph, bindings = <&kp LS(N6)>, <&kp LS(ES_MORD)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // & and ª 
-ZMK_BEHAVIOR(CKC_OR,       mod_morph, bindings = <&kp RA(N1)>, <&kp ES_MORD>;           mods = <(MOD_LSFT|MOD_RSFT)>;) // || and º 
+ZMK_BEHAVIOR(CKC_O_PAR,    mod_morph, bindings = <&kp LS(N8)>,      <&kp RA(E)>;        mods = <(MOD_LSFT|MOD_RSFT)>;) // ( and €
+ZMK_BEHAVIOR(CKC_C_PAR,    mod_morph, bindings = <&kp LS(N9)>,      <&kp LS(N4)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // ) and $
+ZMK_BEHAVIOR(CKC_AND,      mod_morph, bindings = <&kp LS(N6)>,      <&kp LS(ES_MORD)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // & and ª 
+ZMK_BEHAVIOR(CKC_OR,       mod_morph, bindings = <&kp RA(N1)>,      <&kp ES_MORD>;      mods = <(MOD_LSFT|MOD_RSFT)>;) // || and º 
 ZMK_BEHAVIOR(CKC_O_CUR,    mod_morph, bindings = <&kp RA(ES_ACUT)>, <&kp RA(ES_ACUT)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // { 
 ZMK_BEHAVIOR(CKC_C_CUR,    mod_morph, bindings = <&kp RA(ES_CCED)>, <&kp RA(ES_CCED)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // }
-ZMK_BEHAVIOR(CKC_O_BRK,    mod_morph, bindings = <&kp RA(ES_GRV)>, <&kp RA(ES_GRV)>;    mods = <(MOD_LSFT|MOD_RSFT)>;) // [
+ZMK_BEHAVIOR(CKC_O_BRK,    mod_morph, bindings = <&kp RA(ES_GRV)>,  <&kp RA(ES_GRV)>;   mods = <(MOD_LSFT|MOD_RSFT)>;) // [
 ZMK_BEHAVIOR(CKC_C_BRK,    mod_morph, bindings = <&kp RA(ES_PLUS)>, <&kp RA(ES_PLUS)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ]
 
+
+// RAISE LAYER MACROS
+// -----------------------------------------------------------------------
+
+// 
+// -----------------------------------------------------------------------
 
 / { // START KEYBOARD
 

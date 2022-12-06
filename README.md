@@ -1,6 +1,6 @@
 # Zeioth zmk-config
 
-My wireless keyboard firmware
+My wireless keyboard firmware.
 
 ## How to flash
 

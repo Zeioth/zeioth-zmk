@@ -7,12 +7,6 @@
     :set syntax=C 
 */
 
-// TODO: En la capa super, añade controles android (elegir ventana, 
-//       listar programas...) → Puedes hacerlo tap dance, y así solo gastas 
-//       1 keybind.
-// TODO: Añade el soporte mouse.
-// TODO: If you have issues with the config layer, port the tri layer from QMK.
-// TODO: Incluir el manual y el manual de vim.
 
 // Includes
 // ---------------------------------------

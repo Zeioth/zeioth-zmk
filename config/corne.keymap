@@ -32,7 +32,7 @@
 #define CONFIG  6
 #define NONE    0
 
-// SPANISH KEY ALIASES (move me to another file)
+// SPANISH KEYCODE ALIASES
 // ---------------------------------------
 #define ES_MINS SLASH // -
 #define ES_ACUT QUOT  // ´ (dead)

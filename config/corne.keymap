@@ -37,7 +37,7 @@
 #define ES_MINS SLASH // -
 #define ES_ACUT QUOT  // ´ (dead)
 #define ES_GRV  LBRC  // ` (dead)
-#define ES_QUOT MINS  // '
+#define ES_QUOT MINUS // '
 #define ES_IEXL EQUAL // ¡
 #define ES_PLUS RBRC  // +
 
@@ -114,8 +114,6 @@ ZMK_BEHAVIOR(CKC_HASH, mod_morph,
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
   bindings = <&kp ES_PLUS>, <&kp RA(N2)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
-
-
 
 / { // START KEYBOARD
 

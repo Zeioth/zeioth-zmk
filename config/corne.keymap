@@ -8,6 +8,9 @@
  2.Keep only 1 space before the comments, or it will fail to compile.
 */
 
+// TODO: En la capa super, añade controles android (elegir ventana, 
+//       listar programas...) → Puedes hacerlo tap dance, y así solo gastas 
+//       1 keybind.
 
 // Includes
 // ---------------------------------------
@@ -27,6 +30,10 @@
 #define CONFIG  6
 #define NONE    0
 
+
+// SPANISH KEY ALIASES (move me to another file)
+// ---------------------------------------
+#define ES_MINS SLASH // -
 
 // BASE LAYER MACROS 
 // -----------------------------------------------------------------------
@@ -78,8 +85,14 @@ ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)
 ZMK_BEHAVIOR(I3_RESIZE, macro, bindings = <&kp LS(LG(R))>;)
 // I3 MOVE MODE
 ZMK_BEHAVIOR(I3_MOVE, macro, bindings = <&kp LS(LG(A))>;)
-// I3 SCRATCHPAD (TODO: ES_MINS NO EXISTE ASIQUE AVERIGUA LA TECLA)
-ZMK_BEHAVIOR(I3_SPAD, macro, bindings = <&kp LS(LG(S))>;)
+// I3 SCRATCHPAD (CYCLE)
+ZMK_BEHAVIOR(I3_SPAD, macro, bindings = <&kp LG(ES_MINS)>;)
+// I3 WINTAB
+ZMK_BEHAVIOR(I3_WINTAB, macro, bindings = <&kp LG(TAB)>;)
+// I3 KILL
+ZMK_BEHAVIOR(I3_KILL, macro, bindings = <&kp LS(LG(B))>;)
+// I3 XKILL
+ZMK_BEHAVIOR(I3_XKILL, macro, bindings = <&kp LS(LG(J))>;)
 
 / { // START KEYBOARD
 
@@ -148,27 +161,6 @@ ZMK_BEHAVIOR(I3_SPAD, macro, bindings = <&kp LS(LG(S))>;)
     // SUPER LAYER MACROS
     // -----------------------------------------------------------------------
 
-    ZMK_MACRO(I3_WINTAB, // SWAYR LIST ALL TILES
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_KILL, // I3 CLOSE TILE
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_XKILL, // SWAYR KILL -9 TILE
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(I3_PW, // IDK
       bindings
           = <&macro_press &kp LSHFT>

@@ -91,7 +91,7 @@ ZMK_BEHAVIOR(CKC_HASH, mod_morph,
   bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ' and · (bullet)
-ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
+ZMK_BEHAVIOR(CKC_QUOT, mod_morph, 
   bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 

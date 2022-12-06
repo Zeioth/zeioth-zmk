@@ -93,6 +93,15 @@ ZMK_BEHAVIOR(I3_WINTAB, macro, bindings = <&kp LG(TAB)>;)
 ZMK_BEHAVIOR(I3_KILL, macro, bindings = <&kp LS(LG(B))>;)
 // I3 XKILL
 ZMK_BEHAVIOR(I3_XKILL, macro, bindings = <&kp LS(LG(J))>;)
+// I3 PREVIOUS WINDOW
+ZMK_BEHAVIOR(I3_PW, macro, bindings = <&kp LG(L)>;)
+// I3 NEXT WINDOW
+ZMK_BEHAVIOR(I3_NW, macro, bindings = <&kp LG(COMMA)>;)
+// I3 RESET
+ZMK_BEHAVIOR(I3_RESET, macro, bindings = <&kp LG(DOT)>;)
+// I3 FLOAT (TOGGLE)
+ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)
+
 
 / { // START KEYBOARD
 
@@ -157,38 +166,6 @@ ZMK_BEHAVIOR(I3_XKILL, macro, bindings = <&kp LS(LG(J))>;)
   // START MACROS
   // #########################################################################
   macros {
-
-    // SUPER LAYER MACROS
-    // -----------------------------------------------------------------------
-
-    ZMK_MACRO(I3_PW, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_NW, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_RESET, // RESETS I3
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(I3_FLOAT, // TOGGLES FLOAT MODE FOR THE SELECTED TILE
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
 
     // LOWER LAYER MACROS 
     // -----------------------------------------------------------------------

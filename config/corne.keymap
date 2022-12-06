@@ -77,7 +77,7 @@ ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)          // I3 FLOAT (TOG
 // -----------------------------------------------------------------------
 // ´ and `
 ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
-  bindings = <&kp A>, <&kp A>;
+  bindings = <&kp ES_ACUT>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // #
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 

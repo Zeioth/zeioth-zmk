@@ -99,22 +99,22 @@ ZMK_BEHAVIOR(CKC_DQUOT, mod_morph,
 
 
 // ? and ¿
-ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
+ZMK_BEHAVIOR(CKC_QMA, mod_morph, 
   bindings = <&kp LS(ES_QUOT)>, <&kp LS(ES_IEXL)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // ! and ¡
-ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
+ZMK_BEHAVIOR(CKC_EXCLAM, mod_morph, 
   bindings = <&kp LS(N1)>, <&kp ES_IEXL>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // % and ¬
-ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
+ZMK_BEHAVIOR(CKC_PERC, mod_morph, 
   bindings = <&kp LS(N5)>, <&kp RA(N6)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // +
-ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
+ZMK_BEHAVIOR(CKC_PLUS, mod_morph, 
   bindings = <&kp ES_PLUS>, <&kp RA(N2)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 

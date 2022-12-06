@@ -136,7 +136,7 @@ ZMK_LAYER(config_layer,
 // -----------------------------------------------------------------------
 ZMK_BEHAVIOR(CKC_CTRLBS, macro,     bindings = <&kp LC(BSPC)>;)                                      // CTRL+BACKSPACE
 ZMK_BEHAVIOR(CKC_BSPC,   mod_morph, bindings = <&kp BSPC>, <&kp DEL>; mods = <(MOD_LSFT|MOD_RSFT)>;) // BACKSPACE AND DEL
-ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&tog ARROW>;  mods = <(MOD_LSFT)>;)     // Enables ARROW MODE when pressed during LSHIFT.
+ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&tog ARROW>;  mods = <(MOD_LSFT)>;)     // Enable and lock ARROW MODE when LSHIFT+RSHIFT are holded together in that order.
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------

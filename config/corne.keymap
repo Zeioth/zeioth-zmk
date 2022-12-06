@@ -47,7 +47,7 @@
 // -----------------------------------------------------------------------
 ZMK_BEHAVIOR(CKC_CTRLBS, macro,     bindings = <&kp LC(BSPC)>;)                                      // CTRL+BACKSPACE
 ZMK_BEHAVIOR(CKC_BSPC,   mod_morph, bindings = <&kp BSPC>, <&kp DEL>; mods = <(MOD_LSFT|MOD_RSFT)>;) // BACKSPACE AND DEL
-ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&mo 5>;  mods = <(MOD_LSFT)>;)          // Enables ARROW MODE when pressed during LSHIFT.
+ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&tog ARROW>;  mods = <(MOD_LSFT)>;)     // Enables ARROW MODE when pressed during LSHIFT.
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------
@@ -124,8 +124,27 @@ ZMK_BEHAVIOR(VIM_GMD,      macro, bindings = <&kp G>, <&kp D>, <&kp M>;) // Go m
 ZMK_BEHAVIOR(VIM_GMU,      macro, bindings = <&kp G>, <&kp M>, <&kp U>;) // Go method - up ]m
 ZMK_BEHAVIOR(VIM_GTD,      macro, bindings = <&kp G>, <&kp T>, <&kp D>;) // Go tag/class - down ,c1/]]
 ZMK_BEHAVIOR(VIM_GTU,      macro, bindings = <&kp G>, <&kp T>, <&kp U>;) // Go tag/class - up ,c2/[[
-// 
+
+// HYPER LAYER MACROS
 // -----------------------------------------------------------------------
+ZMK_BEHAVIOR(M_CBACKUP,         macro, bindings = <&kp RA(F11)>;)    // Spawns a term → Encrypted backup to the cloud
+ZMK_BEHAVIOR(M_UPDATE_PACKAGES, macro, bindings = <&kp LC(RA(B))>;)  // Spawns a term → Perform system update
+ZMK_BEHAVIOR(M_ROFI,            macro, bindings = <&kp RA(D)>;)      // Spawns the application launcher
+ZMK_BEHAVIOR(M_ROFI_SHORTCUTS,  macro, bindings = <&kp LC(RA(S))>;)  // Perform an encrypted backup to the cloud
+ZMK_BEHAVIOR(M_ROFI_EMOJI,      macro, bindings = <&kp LC(RA(E))>;)  // Shows all emojis and copy selection to clipboard
+ZMK_BEHAVIOR(M_CALC,            macro, bindings = <&kp RA(F8)>;)     // Open calculator
+ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(RA(M))>;)  // IDK 
+ZMK_BEHAVIOR(M_ROFI_DOCS,       macro, bindings = <&kp LS(LG(T))>;)  // Open rofi-zeal by zeioth 
+ZMK_BEHAVIOR(M_ROFI_ACTIVITIES, macro, bindings = <&kp LG(T)>;)      // Open the activities  selector
+ZMK_BEHAVIOR(M_RANGER,          macro, bindings = <&kp RA(F1)>;)     // Open ranger TUI file browser 
+ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp RA(F12)>;)    // Open GUI file browser 
+ZMK_BEHAVIOR(M_VIM,             macro, bindings = <&kp RA(F10)>;)    // Open VIM 
+ZMK_BEHAVIOR(M_WEATHER,         macro, bindings = <&kp LC(RA(W))>;)  // Open TUI weather 
+
+// ARROW MODE LAYER MACROS
+// -----------------------------------------------------------------------
+ZMK_BEHAVIOR(CKC_EXIT_ARROW,    macro, bindings = <&tog ARROW>;) // EXIT ARROW MODE
+
 
 / { // START KEYBOARD
 
@@ -140,34 +159,34 @@ ZMK_BEHAVIOR(VIM_GTU,      macro, bindings = <&kp G>, <&kp T>, <&kp U>;) // Go t
        &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &CKC_BSPC
        &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &CKC_ACCENT
        &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &CKC_RSFT
-                         &mo 1 &mo 2 &kp SPACE   &kp RET &mo 3 &mt LALT ESC >;};
+                 &mo SUPER &mo LOWER &kp SPACE   &kp RET &mo RAISE &mt LALT ESC >;};
 
     // ############################################################  SUPER ########################################################################
     super_layer { bindings = <
        &kp LGUI  &M_LOCK      &kp K_VOL_UP &kp K_VOL_DN &kp K_MUTE &I3_KILL   &I3_XKILL   &kp K_NEXT &kp K_PREV &kp K_PP       &M_PWMENU &kp RALT
        &kp LCTRL &M_WS7       &M_WS1       &M_WS2       &M_WS3       &I3_FS   &I3_WINTAB  &M_WS4     &M_WS5     &M_WS6         &M_WS8    &mt LALT ESC
        &kp LSHFT &I3_DISPLAYS &I3_RESIZE   &I3_MOVE     &I3_SPAD      &none   &I3_FLOAT   &I3_PW     &I3_NW     &I3_SCREENSHOT &I3_RESET &kp RSHFT
-                                              &mo 1        &mo 2      &mo 6   &none       &mo 3      &mt LALT ESC >;};
+                              &mo SUPER    &mo LOWER    &mo CONFIG    &none   &mo RAISE      &mt LALT ESC >;};
     // ############################################################  LOWER ########################################################################
     lower_layer { bindings = <
        &kp LGUI  &kp N4       &kp N3       &kp N2       &kp N1          &kp N5         &kp N0   &kp N6   &kp N7 &kp N8    &kp N9 &kp RALT
        &bt LCTRL &CKC_EXCLAM &CKC_HASH &CKC_QUOT  &CKC_DQUOT &CKC_PERC   &CKC_PLUS &CKC_MINUS &CKC_ASTERISK &CKC_SLASH &CKC_EQUAL &mt LALT ESC
        &kp LSHFT &CKC_LESS   &CKC_MORE &CKC_O_PAR &CKC_C_PAR  &CKC_AND   &CKC_OR   &CKC_C_CUR &CKC_O_CUR    &CKC_C_BRK &CKC_O_BRK &CKC_RSFT
-                                           &mo 1       &mo 2   &kp TAB   &kp TAB   &mo 3      &kp DEL >;};
+                                       &mo SUPER  &mo LOWER    &kp TAB   &kp TAB   &mo RAISE      &kp DEL >;};
 
     // ############################################################  RAISE ########################################################################
     raise_layer { bindings = <
        &kp LGUI  &VIM_DIT &VIM_DIP &VIM_DIS &VIM_DIW &VIM_DIB   &kp HOME    &kp END  &kp PAGE_DOWN &kp PAGE_UP &none    &none
        &kp LCTRL &VIM_CIT &VIM_CIP &VIM_CIS &VIM_CIW &VIM_CIW   &kp LEFT    &kp DOWN &kp UP        &kp RIGHT   &none    &none
        &kp LSHFT &VIM_VIT &VIM_VIP &VIM_VIS &VIM_VIW &VIM_VIB   &none       &VIM_GMD &VIM_GMU      &VIM_GTD    &VIM_GTU &CKC_RSFT
-                                      &mo 1 &mo 2 &CKC_CTRLBS   &CKC_CTRLBS &mo 3    &none >;};
+                              &mo SUPER &mo LOWER &CKC_CTRLBS   &CKC_CTRLBS &mo RAISE    &none >;};
 
     // ############################################################  HYPER ########################################################################
     hyper_layer { bindings = <
       &M_WEATHER &M_CBACKUP &M_UPDATE_PACKAGES &M_ROFI_SHORTCUTS  &M_ROFI_EMOJI &M_FILEX   &M_RANGER &none  &none  &none  &M_VIM  &M_ROFI_MANUALS
        &kp LCTRL &kp F11    &M_ROFI_DOCS       &M_ROFI_ACTIVITIES &M_ROFI        &M_CALC   &none     &none  &none  &none  &kp F12 &kp GRAVE
        &kp LSHFT &kp F4     &kp F3             &kp F2             &kp F1          &kp F5   &kp F10   &kp F6 &kp F7 &kp F8 &kp F9  &CKC_RSFT
-                                               &none              &mo 2            &none   &none     &none  &kp RALT >;};
+                                               &none              &mo LOWER        &none   &none     &none  &kp RALT >;};
 
     // ############################################################  ARROW ########################################################################
     arrow_layer { bindings = <
@@ -185,118 +204,6 @@ ZMK_BEHAVIOR(VIM_GTU,      macro, bindings = <&kp G>, <&kp T>, <&kp U>;) // Go t
                                                             &none &none &none   &none &none &none >;};
 
   };// END KEYMAPS
-
-
-  // START MACROS
-  // #########################################################################
-  macros {
-
-    // HYPER LAYER HERE
-    // ----------------------------------------------------------------------
-    ZMK_MACRO(M_CBACKUP, // Spawns a term → Encrypted backup to the cloud
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_UPDATE_PACKAGES, // Spawns a term → Perform system update
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_ROFI, // Spawns the application launcher
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_ROFI_SHORTCUTS, // Perform an encrypted backup to the cloud
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_ROFI_EMOJI, // Shows all emojis and copy selection to clipboard
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_CALC, // Opens calculator
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_ROFI_MANUALS, // IDK
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_ROFI_DOCS, // Open rofi-real by zeioth
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_ROFI_ACTIVITIES, // Open the activities selector
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_RANGER, // Opens ranger TUI file browser
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_FILEX, // Open GUI file browser
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_VIM, // Opens vim
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(M_WEATHER, // Open TUI weather
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-
-    // ARROW MODE
-    // ----------------------------------------------------------------------
-    ZMK_MACRO(CKC_EXIT_ARROW, // Exits arrow mode
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-
-
-  }; // END MACROS
 
   // TRI-LAYERS (SET LAYERS 'ON' ONLY WHILE PRESSED)
   // ----------------------------------------------------------------------

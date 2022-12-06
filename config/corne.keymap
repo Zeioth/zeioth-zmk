@@ -81,7 +81,7 @@ ZMK_BEHAVIOR(CKC_ACCENT, mod_morph,
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // #
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp A>, <&kp A>;
+  bindings = <&kp RALT(N3)>, <&kp RALT(N4)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ' and · (bullet)
 ZMK_BEHAVIOR(CKC_QUOT, mod_morph, 

@@ -120,7 +120,7 @@ ZMK_BEHAVIOR(VIM_DIP,      macro, bindings = <&kp D>, <&kp I>, <&kp P>;  mods = 
 ZMK_BEHAVIOR(VIM_DIS,      macro, bindings = <&kp D>, <&kp I>, <&kp S>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner sentence
 ZMK_BEHAVIOR(VIM_DIW,      macro, bindings = <&kp D>, <&kp I>, <&kp W>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner word
 ZMK_BEHAVIOR(VIM_DIB,      macro, bindings = <&kp D>, <&kp I>, <&kp B>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner block of code {}
-ZMK_BEHAVIOR(VIM_GDM,      macro, bindings = <&kp G>, <&kp D>, <&kp M>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go method - down [m
+ZMK_BEHAVIOR(VIM_GMD,      macro, bindings = <&kp G>, <&kp D>, <&kp M>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go method - down [m
 ZMK_BEHAVIOR(VIM_GMU,      macro, bindings = <&kp G>, <&kp M>, <&kp U>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go method - up ]m
 ZMK_BEHAVIOR(VIM_GTD,      macro, bindings = <&kp G>, <&kp T>, <&kp D>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go tag/class - down ,c1/]]
 ZMK_BEHAVIOR(VIM_GTU,      macro, bindings = <&kp G>, <&kp T>, <&kp U>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go tag/class - up ,c2/[[

@@ -4,7 +4,7 @@
 
 /* PERSONAL NOTES: 
  1. On vim you can enable C syntax for this file:
-    :set syntax=perl 
+    :set syntax=C 
 */
 
 // TODO: En la capa super, añade controles android (elegir ventana, 

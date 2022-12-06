@@ -11,8 +11,7 @@
 // TODO: En la capa super, añade controles android (elegir ventana, 
 //       listar programas...) → Puedes hacerlo tap dance, y así solo gastas 
 //       1 keybind.
-// TODO: Mapea <(MOD_LSFT|MOD_RSFT)> a SHIFT → en el proyecto de referencia
-//       lo hace y ahorra mucho codigo
+// TODO: Añade el soporte mouse.
 // Includes
 // ---------------------------------------
 #include <behaviors.dtsi>
@@ -40,6 +39,8 @@
 #define ES_QUOT MINUS // '
 #define ES_IEXL EQUAL // ¡
 #define ES_PLUS RBRC  // +
+#define ES_MORD GRAVE // º
+#define ES_LABK NUBS  // <
 
 // BASE LAYER MACROS 
 // -----------------------------------------------------------------------
@@ -95,6 +96,8 @@ ZMK_BEHAVIOR(CKC_DQUOT, mod_morph,
   bindings = <&kp LS(N2)>, <&kp LS(ES_ACUT)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
+
+
 // ? and ¿
 ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
   bindings = <&kp LS(ES_QUOT)>, <&kp LS(ES_IEXL)>;
@@ -114,6 +117,42 @@ ZMK_BEHAVIOR(CKC_HASH, mod_morph,
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
   bindings = <&kp ES_PLUS>, <&kp RA(N2)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
+
+
+
+// - and _
+ZMK_BEHAVIOR(CKC_MINUS, mod_morph, 
+  bindings = <&kp ES_MINS>, <&kp LS(ES_MINS)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// * and ^
+ZMK_BEHAVIOR(CKC_ASTERISK, mod_morph, 
+  bindings = <&kp LS(ES_PLUS)>, <&kp LS(ES_GRV)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// '/' and '\'
+ZMK_BEHAVIOR(CKC_SLASH, mod_morph, 
+  bindings = <&kp LS(N7)>, <&kp RA(ES_MORD)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// =
+ZMK_BEHAVIOR(CKC_EQUAL, mod_morph, 
+  bindings = <&kp LS(N0)>, <&kp LS(N0)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// < and ←
+ZMK_BEHAVIOR(CKC_LESS, mod_morph, 
+  bindings = <&kp ES_LABK>, <&kp RA(Y)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// > and →
+ZMK_BEHAVIOR(CKC_MORE, mod_morph, 
+  bindings = <&kp LS(ES_LABK)>, <&kp RA(I)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// ( and €
+ZMK_BEHAVIOR(CKC_O_PAR, mod_morph, 
+  bindings = <&kp LS(N8)>, <&kp RA(E)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// ) and $
+ZMK_BEHAVIOR(CKC_C_PAR, mod_morph, 
+  bindings = <&kp LS(N9)>, <&kp LS(N4)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+
 
 / { // START KEYBOARD
 
@@ -181,90 +220,6 @@ ZMK_BEHAVIOR(CKC_DQUOT, mod_morph,
 
     // LOWER LAYER MACROS 
     // -----------------------------------------------------------------------
-    ZMK_MACRO(CKC_QMA, // ? and ¿
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_EXCLAM, // ! and ¡
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_PERC, // % and ¬
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_PLUS, // +
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_MINUS, // - and _
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_ASTERISK, // * and ^
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_SLASH, // '/' and '\'
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_EQUAL, // =
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_LESS, // < and ←
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_MORE, // > and →
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_O_PAR, // ( and €
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_C_PAR, // ) and $
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(CKC_AND, // & and ª
       bindings
           = <&macro_press &kp LSHFT>

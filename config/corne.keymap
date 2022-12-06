@@ -38,6 +38,8 @@
 #define ES_ACUT QUOT  // ´ (dead)
 #define ES_GRV  LBRC  // ` (dead)
 #define ES_QUOT MINS  // '
+#define ES_IEXL EQUAL // ¡
+#define ES_PLUS RBRC  // +
 
 // BASE LAYER MACROS 
 // -----------------------------------------------------------------------
@@ -95,23 +97,25 @@ ZMK_BEHAVIOR(CKC_DQUOT, mod_morph,
 
 // ? and ¿
 ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
-  bindings = <&kp A>, <&kp A>;
+  bindings = <&kp LS(ES_QUOT)>, <&kp LS(ES_IEXL)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // ! and ¡
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp A>, <&kp A>;
+  bindings = <&kp LS(N1)>, <&kp ES_IEXL>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // % and ¬
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp A>, <&kp A>;
+  bindings = <&kp LS(N5)>, <&kp RA(N6)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // +
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
-  bindings = <&kp A>, <&kp A>;
+  bindings = <&kp ES_PLUS>, <&kp RA(N2)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
+
+
 
 / { // START KEYBOARD
 

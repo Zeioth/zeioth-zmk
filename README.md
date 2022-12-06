@@ -16,8 +16,8 @@ Under normal circumstances this should not be necessary, but it can be done with
     sudo adafruit-nrfutil --verbose dfu serial --package nice_nano_bootloader-_s140_6.1.1.zip -p /dev/ttyS0 -b 115200 --singlebank --touch 1200
 
 ## How to use - REQUIREMENTS
-This firmware is for spanish. So your system's keyboard distribution must be
-spanish querty. The firmware convert it in real time to spanish WORKMAN layout.
+This firmware is for spanish. Your system's keyboard distribution must be
+spanish querty. The firmware will convert it in real time to spanish WORKMAN layout.
 
 ## How to use - LAYERS
 * Default layer: Workman layout + spanish ñ/Ñ character.

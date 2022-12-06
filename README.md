@@ -15,11 +15,11 @@ Under normal circumstances this should not be necessary, but it can be done with
     pip3 uninstall --user adafruit-nrfutil
     sudo adafruit-nrfutil --verbose dfu serial --package nice_nano_bootloader-_s140_6.1.1.zip -p /dev/ttyS0 -b 115200 --singlebank --touch 1200
 
-## How to use - REQUIREMENTS
+## REQUIREMENTS
 This firmware is for spanish. Your system's keyboard distribution must be
 spanish querty. The firmware will convert it in real time to spanish WORKMAN layout.
 
-## How to use - LAYERS
+## LAYERS
 * Default layer: Workman layout + spanish ñ/Ñ character.
 * Super: Full integration with I3/SWAY keybinds (the default ones, and some extras).
 * Lower: Characters + numbers. Because all characters you can achieve with RALT

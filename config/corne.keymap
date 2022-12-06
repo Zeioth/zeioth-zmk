@@ -105,7 +105,25 @@ ZMK_BEHAVIOR(CKC_C_BRK,    mod_morph, bindings = <&kp RA(ES_PLUS)>, <&kp RA(ES_P
 
 // RAISE LAYER MACROS
 // -----------------------------------------------------------------------
-
+ZMK_BEHAVIOR(VIM_CIT,      macro, bindings = <&kp C>, <&kp I>, <&kp T>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // change inner tag
+ZMK_BEHAVIOR(VIM_CIP,      macro, bindings = <&kp C>, <&kp I>, <&kp P>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // change inner paragraph
+ZMK_BEHAVIOR(VIM_CIS,      macro, bindings = <&kp C>, <&kp I>, <&kp S>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // change inner sentence
+ZMK_BEHAVIOR(VIM_CIW,      macro, bindings = <&kp C>, <&kp I>, <&kp W>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // change inner word
+ZMK_BEHAVIOR(VIM_CIB,      macro, bindings = <&kp C>, <&kp I>, <&kp B>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // change inner block of code {}
+ZMK_BEHAVIOR(VIM_VIT,      macro, bindings = <&kp V>, <&kp I>, <&kp T>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // visual inner tag (selection)
+ZMK_BEHAVIOR(VIM_VIP,      macro, bindings = <&kp V>, <&kp I>, <&kp P>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // visual inner paragraph (selection)
+ZMK_BEHAVIOR(VIM_VIS,      macro, bindings = <&kp V>, <&kp I>, <&kp S>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // visual inner sentence (selection)
+ZMK_BEHAVIOR(VIM_VIW,      macro, bindings = <&kp V>, <&kp I>, <&kp W>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // visual inner word (selection)
+ZMK_BEHAVIOR(VIM_VIB,      macro, bindings = <&kp V>, <&kp I>, <&kp B>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // visual inner block of code {}
+ZMK_BEHAVIOR(VIM_DIT,      macro, bindings = <&kp D>, <&kp I>, <&kp T>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner tag
+ZMK_BEHAVIOR(VIM_DIP,      macro, bindings = <&kp D>, <&kp I>, <&kp P>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner paragraph
+ZMK_BEHAVIOR(VIM_DIS,      macro, bindings = <&kp D>, <&kp I>, <&kp S>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner sentence
+ZMK_BEHAVIOR(VIM_DIW,      macro, bindings = <&kp D>, <&kp I>, <&kp W>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner word
+ZMK_BEHAVIOR(VIM_DIB,      macro, bindings = <&kp D>, <&kp I>, <&kp B>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // delete inner block of code {}
+ZMK_BEHAVIOR(VIM_GDM,      macro, bindings = <&kp G>, <&kp D>, <&kp M>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go method - down [m
+ZMK_BEHAVIOR(VIM_GMU,      macro, bindings = <&kp G>, <&kp M>, <&kp U>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go method - up ]m
+ZMK_BEHAVIOR(VIM_GTD,      macro, bindings = <&kp G>, <&kp T>, <&kp D>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go tag/class - down ,c1/]]
+ZMK_BEHAVIOR(VIM_GTU,      macro, bindings = <&kp G>, <&kp T>, <&kp U>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // Go tag/class - up ,c2/[[
 // 
 // -----------------------------------------------------------------------
 
@@ -172,142 +190,6 @@ ZMK_BEHAVIOR(CKC_C_BRK,    mod_morph, bindings = <&kp RA(ES_PLUS)>, <&kp RA(ES_P
   // START MACROS
   // #########################################################################
   macros {
-
-    // RAISE LAYER HERE
-    // ----------------------------------------------------------------------
-    ZMK_MACRO(VIM_CIT, // change inner tag
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_CIP, // change inner paragraph
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_CIS, // change inner sentence
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_CIW, // change inner word
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_CIB, // change inner block of code {}
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_VIT, // visual inner tag (selection)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_VIP, // visual inner paragraph (selection)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_VIS, // visual inner sentence (selection)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_VIW, // visual inner word (selection)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_VIB, // visual inner block of code {} (selection)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_DIT, // delete inner tag
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_DIP, // delete inner paragraph
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_DIS, // delete inner sentence
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_DIW, // delete inner word
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_DIB, // delete inner block of code {}
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_GMD, // Go method - down [m
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_GMU, // Go method - up ]m
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_GTD, // Go tag/class - down ,c1/]]
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(VIM_GTU, // Go tag/class - up ,c2/[[
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
 
     // HYPER LAYER HERE
     // ----------------------------------------------------------------------

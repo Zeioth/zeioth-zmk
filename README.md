@@ -20,15 +20,15 @@ This firmware is for spanish. Your system's keyboard distribution must be
 spanish querty. The firmware will convert it in real time to spanish WORKMAN layout.
 
 ## LAYERS
-* Default layer: Workman layout + spanish ñ/Ñ character.
-* Super: Full integration with I3/SWAY keybinds (the default ones, and some extras).
-* Lower: Characters + numbers. Because all characters you can achieve with RALT
+* **Default**: Workman layout + spanish ñ/Ñ character.
+* **Super**: Full integration with I3/SWAY keybinds (the default ones, and some extras).
+* **Lower**: Characters + numbers. Because all characters you can achieve with RALT
          already exist in this layer, we don't have RALT key at all.
-* Raise: On the right side, Movement/pagination keys (also mouse keys when
+* **Raise**: On the right side, Movement/pagination keys (also mouse keys when
          implemented). On the left side VIM macros.
-* Hyper: Programs
-* Arrow mode: A mode that only has arrow keys in different positions. Comfortable for reading!
-* Config: Configures the keyboard. Currently, only has bluetooth profiles and a
+* **Hyper**: Programs
+* **Arrow mode**: A mode that only has arrow keys in different positions. Comfortable for reading!
+* **Config**: Configures the keyboard. Currently, only has bluetooth profiles and a
           shortcut to launch this firmware manual (and my vimrc's).
 
 ## Docs

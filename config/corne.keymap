@@ -81,16 +81,16 @@ ZMK_BEHAVIOR(CKC_ACCENT, mod_morph,
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // #
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp RALT(N3)>, <&kp RALT(N4)>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ' and · (bullet)
 ZMK_BEHAVIOR(CKC_QUOT, mod_morph, 
-  bindings = <&kp A>, <&kp LSHFT(N3)>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // " and ¨ (dieresis)
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
-  bindings = <&kp LSHFT(N2)>, <&kp LSHFT(A)>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // ? and ¿
@@ -100,41 +100,18 @@ ZMK_BEHAVIOR(CKC_ACCENT, mod_morph,
 
 // ! and ¡
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp RALT(N3)>, <&kp RALT(N4)>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // % and ¬
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp A>, <&kp LSHFT(N3)>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // +
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
-  bindings = <&kp LSHFT(N2)>, <&kp LSHFT(A)>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
-
-
-/* // ? and ¿ */
-/* ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, */ 
-/*   bindings = <&kp ES_ACUT>, <&kp ES_GRV>; */
-/*   mods = <(MOD_LSFT|MOD_RSFT)>;) */
-
-/* // ! and ¡ */
-/* ZMK_BEHAVIOR(CKC_HASH, mod_morph, */ 
-/*   bindings = <&kp RALT(N3)>, <&kp RALT(N4)>; */
-/*   mods = <(MOD_LSFT|MOD_RSFT)>;) */
-
-/* // % and ¬ */
-/* ZMK_BEHAVIOR(CKC_HASH, mod_morph, */ 
-/*   bindings = <&kp ES_QUOT>, <&kp LSHFT(N3)>; */
-/*   mods = <(MOD_LSFT|MOD_RSFT)>;) */
-
-/* // + */
-/* ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, */ 
-/*   bindings = <&kp LSHFT(N2)>, <&kp LSHFT(ES_ACUT)>; */
-/*   mods = <(MOD_LSFT|MOD_RSFT)>;) */
-
-
 
 / { // START KEYBOARD
 

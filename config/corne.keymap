@@ -11,7 +11,8 @@
 // TODO: En la capa super, añade controles android (elegir ventana, 
 //       listar programas...) → Puedes hacerlo tap dance, y así solo gastas 
 //       1 keybind.
-
+// TODO: Mapea <(MOD_LSFT|MOD_RSFT)> a SHIFT → en el proyecto de referencia
+//       lo hace y ahorra mucho codigo
 // Includes
 // ---------------------------------------
 #include <behaviors.dtsi>
@@ -76,7 +77,7 @@ ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)          // I3 FLOAT (TOG
 // -----------------------------------------------------------------------
 // ´ and `
 ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
-  bindings = <&kp ES_ACUT>, <&kp ES_GRV>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // #
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
@@ -84,17 +85,17 @@ ZMK_BEHAVIOR(CKC_HASH, mod_morph,
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ' and · (bullet)
 ZMK_BEHAVIOR(CKC_QUOT, mod_morph, 
-  bindings = <&kp ES_QUOT>, <&kp LSHFT(N3)>;
+  bindings = <&kp A>, <&kp LSHFT(N3)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // " and ¨ (dieresis)
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
-  bindings = <&kp LSHFT(N2)>, <&kp LSHFT(ES_ACUT)>;
+  bindings = <&kp LSHFT(N2)>, <&kp LSHFT(A)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // ? and ¿
 ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
-  bindings = <&kp ES_ACUT>, <&kp ES_GRV>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // ! and ¡
@@ -104,12 +105,12 @@ ZMK_BEHAVIOR(CKC_HASH, mod_morph,
 
 // % and ¬
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp ES_QUOT>, <&kp LSHFT(N3)>;
+  bindings = <&kp A>, <&kp LSHFT(N3)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 // +
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
-  bindings = <&kp LSHFT(N2)>, <&kp LSHFT(ES_ACUT)>;
+  bindings = <&kp LSHFT(N2)>, <&kp LSHFT(A)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 

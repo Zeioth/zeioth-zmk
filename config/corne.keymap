@@ -33,7 +33,10 @@
 
 // SPANISH KEY ALIASES (move me to another file)
 // ---------------------------------------
-#define ES_MINS SLASH // -
+#define ES_MINS SLASH   // -
+#define ES_ACUT QUOT    // ´ (dead)
+#define ES_GRV  KC_LBRC // ` (dead)
+#define ES_QUOT MINS    // '
 
 // BASE LAYER MACROS 
 // -----------------------------------------------------------------------
@@ -51,56 +54,51 @@ ZMK_BEHAVIOR(CKC_RSFT, mod_morph,
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------
-// WORKSPACE 1
-ZMK_BEHAVIOR(M_WS1, macro, bindings = <&kp LGUI>, <&kp N1>;)
-// WORKSPACE 2
-ZMK_BEHAVIOR(M_WS2, macro, bindings = <&kp LGUI>, <&kp N2>;)
-// WORKSPACE 3
-ZMK_BEHAVIOR(M_WS3, macro, bindings = <&kp LGUI>, <&kp N3>;)
-// WORKSPACE 4
-ZMK_BEHAVIOR(M_WS4, macro, bindings = <&kp LGUI>, <&kp N4>;)
-// WORKSPACE 5
-ZMK_BEHAVIOR(M_WS5, macro, bindings = <&kp LGUI>, <&kp N5>;)
-// WORKSPACE 6
-ZMK_BEHAVIOR(M_WS6, macro, bindings = <&kp LGUI>, <&kp N6>;)
-// WORKSPACE 7
-ZMK_BEHAVIOR(M_WS7, macro, bindings = <&kp LGUI>, <&kp N7>;)
-// WORKSPACE 8
-ZMK_BEHAVIOR(M_WS8, macro, bindings = <&kp LGUI>, <&kp N8>;)
-// LOCK SESSION
-ZMK_BEHAVIOR(M_LOCK, macro, bindings = <&kp LS(LG(L))>;)
-// POWER MENU
-ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)
-// SHOW KEYBOARD HELP
-ZMK_BEHAVIOR(M_HELP, macro, bindings = <&kp LS(LG(H))>;)
-// SHOW VIM HELP
-ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;)
-// I3 FULL SCREEN
-ZMK_BEHAVIOR(I3_FS, macro, bindings = <&kp LG(F)>;)
-// I3 DISPLAY MODE
-ZMK_BEHAVIOR(I3_DISPLAYS, macro, bindings = <&kp LS(LG(D))>;)
-// I3 SCREENSHOT MODE
-ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)
-// I3 RESIZE MODE
-ZMK_BEHAVIOR(I3_RESIZE, macro, bindings = <&kp LS(LG(R))>;)
-// I3 MOVE MODE
-ZMK_BEHAVIOR(I3_MOVE, macro, bindings = <&kp LS(LG(A))>;)
-// I3 SCRATCHPAD (CYCLE)
-ZMK_BEHAVIOR(I3_SPAD, macro, bindings = <&kp LG(ES_MINS)>;)
-// I3 WINTAB
-ZMK_BEHAVIOR(I3_WINTAB, macro, bindings = <&kp LG(TAB)>;)
-// I3 KILL
-ZMK_BEHAVIOR(I3_KILL, macro, bindings = <&kp LS(LG(B))>;)
-// I3 XKILL
-ZMK_BEHAVIOR(I3_XKILL, macro, bindings = <&kp LS(LG(J))>;)
-// I3 PREVIOUS WINDOW
-ZMK_BEHAVIOR(I3_PW, macro, bindings = <&kp LG(L)>;)
-// I3 NEXT WINDOW
-ZMK_BEHAVIOR(I3_NW, macro, bindings = <&kp LG(COMMA)>;)
-// I3 RESET
-ZMK_BEHAVIOR(I3_RESET, macro, bindings = <&kp LG(DOT)>;)
-// I3 FLOAT (TOGGLE)
-ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)
+ZMK_BEHAVIOR(M_WS1, macro, bindings = <&kp LGUI>, <&kp N1>;)    // WORKSPACE 1
+ZMK_BEHAVIOR(M_WS2, macro, bindings = <&kp LGUI>, <&kp N2>;)    // WORKSPACE 2
+ZMK_BEHAVIOR(M_WS3, macro, bindings = <&kp LGUI>, <&kp N3>;)    // WORKSPACE 3
+ZMK_BEHAVIOR(M_WS4, macro, bindings = <&kp LGUI>, <&kp N4>;)    // WORKSPACE 4
+ZMK_BEHAVIOR(M_WS5, macro, bindings = <&kp LGUI>, <&kp N5>;)    // WORKSPACE 5
+ZMK_BEHAVIOR(M_WS6, macro, bindings = <&kp LGUI>, <&kp N6>;)    // WORKSPACE 6
+ZMK_BEHAVIOR(M_WS7, macro, bindings = <&kp LGUI>, <&kp N7>;)    // WORKSPACE 7
+ZMK_BEHAVIOR(M_WS8, macro, bindings = <&kp LGUI>, <&kp N8>;)    // WORKSPACE 8
+ZMK_BEHAVIOR(M_LOCK, macro, bindings = <&kp LS(LG(L))>;)        // LOCK SESSION
+ZMK_BEHAVIOR(M_PWMENU, macro, bindings = <&kp LS(LG(E))>;)      // POWER MENU
+ZMK_BEHAVIOR(M_HELP, macro, bindings = <&kp LS(LG(H))>;)        // SHOW KEYBOARD HELP
+ZMK_BEHAVIOR(M_VIM_HELP, macro, bindings = <&kp LS(LG(V))>;)    // SHOW VIM HELP
+ZMK_BEHAVIOR(I3_FS, macro, bindings = <&kp LG(F)>;)             // I3 FULL SCREEN
+ZMK_BEHAVIOR(I3_DISPLAYS, macro, bindings = <&kp LS(LG(D))>;)   // I3 DISPLAY MODE
+ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;) // I3 SCREENSHOT MODE
+ZMK_BEHAVIOR(I3_RESIZE, macro, bindings = <&kp LS(LG(R))>;)     // I3 RESIZE MODE
+ZMK_BEHAVIOR(I3_MOVE, macro, bindings = <&kp LS(LG(A))>;)       // I3 MOVE MODE
+ZMK_BEHAVIOR(I3_SPAD, macro, bindings = <&kp LG(ES_MINS)>;)     // I3 SCRATCHPAD (CYCLE)
+ZMK_BEHAVIOR(I3_WINTAB, macro, bindings = <&kp LG(TAB)>;)       // I3 WINTAB
+ZMK_BEHAVIOR(I3_KILL, macro, bindings = <&kp LS(LG(B))>;)       // I3 KILL
+ZMK_BEHAVIOR(I3_XKILL, macro, bindings = <&kp LS(LG(J))>;)      // I3 XKILL
+ZMK_BEHAVIOR(I3_PW, macro, bindings = <&kp LG(L)>;)             // I3 PREVIOUS WINDOW
+ZMK_BEHAVIOR(I3_NW, macro, bindings = <&kp LG(COMMA)>;)         // I3 NEXT WINDOW
+ZMK_BEHAVIOR(I3_RESET, macro, bindings = <&kp LG(DOT)>;)        // I3 RESET
+ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)          // I3 FLOAT (TOGGLE)
+
+// LOWER LAYER MACROS
+// -----------------------------------------------------------------------
+// ´ and `
+ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
+  bindings = <&kp ES_ACUT>, <&kp ES_GRV>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// #
+ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
+  bindings = <&kp RALT(N3)>, <&kp RALT(N4)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+// ' and · (bullet)
+ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
+  bindings = <&kp ES_QUOT>, <&kp LSHFT(N3)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
+
+ // " and ¨ (dieresis)
+ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
+  bindings = <&kp LSHFT(N2)>, <&kp LSHFT(ES_ACUT)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 
 / { // START KEYBOARD
@@ -169,34 +167,6 @@ ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)
 
     // LOWER LAYER MACROS 
     // -----------------------------------------------------------------------
-    ZMK_MACRO(CKC_ACCENT, // ´ and `
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_HASH, // #
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_QUOT, // ' and · (bullet)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
-    ZMK_MACRO(CKC_DQUOT, // " and ¨ (dieresis)
-      bindings
-          = <&macro_press &kp LSHFT>
-          , <&macro_tap &kp Z &kp M &kp K>
-          , <&macro_release &kp LSHFT>
-          ;
-    )
     ZMK_MACRO(CKC_QMA, // ? and ¿
       bindings
           = <&macro_press &kp LSHFT>

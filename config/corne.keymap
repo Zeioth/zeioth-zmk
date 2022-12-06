@@ -5,7 +5,6 @@
 /* PERSONAL NOTES: 
  1. On vim you can enable C syntax for this file:
     :set syntax=perl 
- 2.Keep only 1 space before the comments, or it will fail to compile.
 */
 
 // TODO: En la capa super, añade controles android (elegir ventana, 
@@ -13,6 +12,7 @@
 //       1 keybind.
 // TODO: Añade el soporte mouse.
 // TODO: If you have issues with the config layer, port the tri layer from QMK.
+// TODO: Incluir el manual y el manual de vim.
 
 // Includes
 // ---------------------------------------
@@ -32,7 +32,6 @@
 #define CONFIG  6
 #define NONE    0
 
-
 // SPANISH KEY ALIASES (move me to another file)
 // ---------------------------------------
 #define ES_MINS SLASH // -
@@ -44,7 +43,6 @@
 #define ES_MORD GRAVE // º
 #define ES_LABK NUBS  // <
 #define ES_CCED NUHS  // Ç
-
 
 // TRI-LAYERS
 // ----------------------------------------------------------------------
@@ -132,22 +130,6 @@ ZMK_LAYER(config_layer,
                                                     &none         &none         &none             &none         &none         &none
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
-
-
-
-
-/ { keymap { compatible = "zmk,keymap";
-
-    // ############################################################  CONFIG ########################################################################
-    // Note: We've removed RGB controls from this layer because we don't use them anymore. Feel free to re-add them if you need them.
-    config_layer { bindings = <
-       &none &none        &none        &none        &none        &none          &none &none   &none       &none &none &none
-       &none &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_SEL 4   &none &M_HELP &M_VIM_HELP &none &none &none
-       &none &none        &none        &none        &bt BT_CLR   &none          &none &none   &none       &none &none &none
-                                                            &none &none &none   &none &none &none >;};
-};};
-
-
 
 
 // BASE LAYER MACROS 
@@ -250,8 +232,6 @@ ZMK_BEHAVIOR(M_WEATHER,         macro, bindings = <&kp LC(RA(W))>;)  // Open TUI
 // ARROW MODE LAYER MACROS
 // -----------------------------------------------------------------------
 ZMK_BEHAVIOR(CKC_EXIT_ARROW,    macro, bindings = <&tog ARROW>;)    // EXIT ARROW MODE
-
-
 
 
 

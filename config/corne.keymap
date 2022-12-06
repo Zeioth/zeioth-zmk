@@ -13,7 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "../zmk-nodefree-config/helper.h"
+#include "./helpers.h"
 
 // LAYER ALIASES
 // ---------------------------------------

@@ -34,10 +34,10 @@
 
 // SPANISH KEY ALIASES (move me to another file)
 // ---------------------------------------
-#define ES_MINS SLASH   // -
-#define ES_ACUT QUOT    // ´ (dead)
-#define ES_GRV  KC_LBRC // ` (dead)
-#define ES_QUOT MINS    // '
+#define ES_MINS SLASH // -
+#define ES_ACUT QUOT  // ´ (dead)
+#define ES_GRV  LBRC  // ` (dead)
+#define ES_QUOT MINS  // '
 
 // BASE LAYER MACROS 
 // -----------------------------------------------------------------------

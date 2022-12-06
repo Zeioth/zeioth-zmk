@@ -84,20 +84,20 @@ ZMK_BEHAVIOR(I3_FLOAT, macro, bindings = <&kp LG(K)>;)          // I3 FLOAT (TOG
 // -----------------------------------------------------------------------
 // ´ and `
 ZMK_BEHAVIOR(CKC_ACCENT, mod_morph, 
-  bindings = <&kp ES_ACUT>, <&kp ES_GRV>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // #
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp ES_ACUT>, <&kp ES_GRV>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 // ' and · (bullet)
 ZMK_BEHAVIOR(CKC_HASH, mod_morph, 
-  bindings = <&kp ES_ACUT>, <&kp ES_GRV>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
  // " and ¨ (dieresis)
 ZMK_BEHAVIOR(CKC_DQUOT, mod_morph, 
-  bindings = <&kp ES_ACUT>, <&kp ES_GRV>;
+  bindings = <&kp A>, <&kp A>;
   mods = <(MOD_LSFT|MOD_RSFT)>;)
 
 

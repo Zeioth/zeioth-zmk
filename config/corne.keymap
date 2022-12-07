@@ -6,6 +6,7 @@
  1. On vim you can enable C syntax for this file:
     :set syntax=C 
 */
+// FIXME: I3_KILL is currently opening with SUPER+B instead of SHIFT+SUPER+B.
 
 
 // Includes
@@ -53,7 +54,7 @@ ZMK_LAYER(default_layer, //  ###################################################
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &kp A         &kp S         &kp H         &kp T         &kp G             &kp Y         &kp N         &kp E         &kp O         &kp I         &CKC_ACCENT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHFT     &kp Z         &kp X         &kp M         &kp C         &kp V            &kp K         &kp L         &kp COMMA     &kp DOT       &kp FSLH      &CKC_RSFT
+          &kp LSHFT     &kp Z         &kp X         &kp M         &kp C         &kp V             &kp K         &kp L         &kp COMMA     &kp DOT       &kp FSLH      &CKC_RSFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                     &mo SUPER     &mo LOWER     &kp SPACE         &kp RET       &mo RAISE     &mt LALT ESC
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -212,11 +213,11 @@ ZMK_BEHAVIOR(VIM_GTU,      macro, bindings = <&kp G>, <&kp T>, <&kp U>;) // Go t
 ZMK_BEHAVIOR(M_CBACKUP,         macro, bindings = <&kp RA(F11)>;)    // Spawns a term → Encrypted backup to the cloud
 ZMK_BEHAVIOR(M_UPDATE_PACKAGES, macro, bindings = <&kp LC(RA(B))>;)  // Spawns a term → Perform system update
 ZMK_BEHAVIOR(M_ROFI,            macro, bindings = <&kp RA(D)>;)      // Spawns the application launcher
-ZMK_BEHAVIOR(M_ROFI_SHORTCUTS,  macro, bindings = <&kp LC(RA(S))>;)  // Perform an encrypted backup to the cloud
+ZMK_BEHAVIOR(M_ROFI_SHORTCUTS,  macro, bindings = <&kp LC(RA(S))>;)  // Spawns rofi-shortcuts by zeioth
 ZMK_BEHAVIOR(M_ROFI_EMOJI,      macro, bindings = <&kp LC(RA(E))>;)  // Shows all emojis and copy selection to clipboard
 ZMK_BEHAVIOR(M_CALC,            macro, bindings = <&kp RA(F8)>;)     // Open calculator
-ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(RA(M))>;)  // IDK 
-ZMK_BEHAVIOR(M_ROFI_DOCS,       macro, bindings = <&kp LS(LG(T))>;)  // Open rofi-zeal by zeioth 
+ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(RA(M))>;)  // Open rofi-zeal by zeioth 
+ZMK_BEHAVIOR(M_ROFI_DOCS,       macro, bindings = <&kp LS(LG(T))>;)  // Open rofi and browse in the documentation of my projects
 ZMK_BEHAVIOR(M_ROFI_ACTIVITIES, macro, bindings = <&kp LG(T)>;)      // Open the activities  selector
 ZMK_BEHAVIOR(M_RANGER,          macro, bindings = <&kp RA(F1)>;)     // Open ranger TUI file browser 
 ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp RA(F12)>;)    // Open GUI file browser 

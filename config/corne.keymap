@@ -129,7 +129,7 @@ ZMK_LAYER(android_mode_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           &A_SHORTCUTS  &none         &none         &none         &none         &A_KILLAPP        &none         &A_SEARCH     &none         &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &none         &noe          &none         &A_CYCLEAPPL  &A_CYCLEAPPR  &none             &none         &none         &none         &none         &none         &none
+          &none         &none         &none         &A_CYCLEAPPL  &A_CYCLEAPPR  &none             &none         &none         &none         &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &A_DEX        &none         &none         &none         &A_MENU       &none             &none         &A_NOTIF      &none         &none         &none         &none
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -156,8 +156,6 @@ ZMK_BEHAVIOR(M_WS7,         macro, bindings = <&kp LG(N7)>;)        // WORKSPACE
 ZMK_BEHAVIOR(M_WS8,         macro, bindings = <&kp LG(N8)>;)        // WORKSPACE 8
 ZMK_BEHAVIOR(M_LOCK,        macro, bindings = <&kp LS(LG(L))>;)     // LOCK SESSION
 ZMK_BEHAVIOR(M_PWMENU,      macro, bindings = <&kp LS(LG(E))>;)     // POWER MENU
-ZMK_BEHAVIOR(M_HELP,        macro, bindings = <&kp LS(LG(H))>;)     // SHOW KEYBOARD HELP
-ZMK_BEHAVIOR(M_VIM_HELP,    macro, bindings = <&kp LS(LG(V))>;)     // SHOW VIM HELP
 ZMK_BEHAVIOR(I3_FS,         macro, bindings = <&kp LG(F)>;)         // I3 FULL SCREEN
 ZMK_BEHAVIOR(I3_DISPLAYS,   macro, bindings = <&kp LS(LG(D))>;)     // I3 DISPLAY MODE
 ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)     // I3 SCREENSHOT MODE
@@ -245,6 +243,8 @@ ZMK_BEHAVIOR(CKC_EXIT_ARROW,    macro, bindings = <&tog ARROW>;)    // EXIT ARRO
 // -----------------------------------------------------------------------
 // ZMK_BEHAVIOR(MODE_ANDROID,      macro, bindings = <&ls android_mode_layer>;)     // Toggles ANDROID mode on/off
 //                                                                                  TODO: Once ZMK #1572 is cleared.
+ZMK_BEHAVIOR(M_HELP,        macro, bindings = <&kp LS(LG(H))>;)     // SHOW KEYBOARD HELP
+ZMK_BEHAVIOR(M_VIM_HELP,    macro, bindings = <&kp LS(LG(V))>;)     // SHOW VIM HELP
 
 // ANDROID LAYER MACROS
 // -----------------------------------------------------------------------
@@ -252,7 +252,7 @@ ZMK_BEHAVIOR(A_KILLAPP,    macro, bindings = <&kp RA(F11)>;)    // Closes the ac
 ZMK_BEHAVIOR(A_MENU,       macro, bindings = <&kp RA(F11)>;)    // Opens the application menu
 ZMK_BEHAVIOR(A_CYCLEAPPL,  macro, bindings = <&kp RA(F11)>;)    // Cycles through opened apps (left)
 ZMK_BEHAVIOR(A_CYCLEAPPR,  macro, bindings = <&kp RA(F11)>;)    // Allow cycling through apps (left)
-ZMK_BEHAVIOR(A_SHORTCUTS, macro, bindings = <&kp RA(F11)>;)    // Show this shortcuts visually 
+ZMK_BEHAVIOR(A_SHORTCUTS,  macro, bindings = <&kp RA(F11)>;)    // Show this shortcuts visually 
 ZMK_BEHAVIOR(A_NOTIF,      macro, bindings = <&kp RA(F11)>;)    // Open notifications. Navigate with tab, close with esc.
 ZMK_BEHAVIOR(A_DEX,        macro, bindings = <&kp RA(F11)>;)    // Toggles DEX mode if the device supports it.
 ZMK_BEHAVIOR(A_SEARCH,     macro, bindings = <&kp RA(F11)>;)    // Open the search box on the internet browser.

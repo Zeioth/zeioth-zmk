@@ -6,8 +6,7 @@
  1. On vim you can enable C syntax for this file:
     :set syntax=C 
 */
-// TODO: Create an android layer that is triggered through tap dance 
-// TODO: Another alternative is to create a keyboard MODE for android, that changes the super layer.
+
 
 // Includes
 // ---------------------------------------

@@ -40,8 +40,8 @@ spanish querty. The firmware will convert it in real time to spanish WORKMAN lay
                   Comfortable for reading!
 * **Config**: Configures the keyboard. Currently, only has bluetooth profiles
               and a shortcut to launch this firmware manual (and my vimrc's).
-* **Android**: Android doesn't allow customizing keyboard  shortcuts, so we
-               need this layer to control it by keyboard (yet?).
+* **Android**: Android doesn't allow customizing keyboard shortcuts (yet?), so
+               we need this layer to control it.
 
 ## Troubleshooting
 

@@ -127,11 +127,11 @@ ZMK_LAYER(config_layer,
 )
 ZMK_LAYER(android_mode_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &none         &A_SHORTCUTS  &none         &none         &none         &A_KILLAPP        &none         &A_SEARCH     &none         &none         &none         &none
+          &none         &none         &none         &none         &none         &A_KILLAPP        &A_FILEX      &A_SEARCH     &none         &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &none         &none         &none         &A_CYCLEAPPL  &A_CYCLEAPPR  &none             &none         &none         &none         &none         &none         &none
+          &none         &A_WS4        &A_WS3        &A_WS2        &A_WS1        &none             &none         &A_CYCLEAPPL  &A_CYCLEAPPR  &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &none         &A_DEX        &none         &none         &A_MENU       &none             &none         &A_NOTIF      &none         &none         &none         &none
+          &none         &A_DEX        &none         &none         &A_MENU       &none             &A_NOFIC      &A_CYCLEAPPR  &A_CYCLEAPPR  &none         &none         &none
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                     &none         &none         &none             &none         &none         &none
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -248,12 +248,16 @@ ZMK_BEHAVIOR(M_VIM_HELP,    macro, bindings = <&kp LS(LG(V))>;)     // SHOW VIM 
 
 // ANDROID LAYER MACROS
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(A_KILLAPP,    macro, bindings = <&kp RA(F11)>;)    // Closes the active app
-ZMK_BEHAVIOR(A_MENU,       macro, bindings = <&kp RA(F11)>;)    // Opens the application menu
-ZMK_BEHAVIOR(A_CYCLEAPPL,  macro, bindings = <&kp RA(F11)>;)    // Cycles through opened apps (left)
-ZMK_BEHAVIOR(A_CYCLEAPPR,  macro, bindings = <&kp RA(F11)>;)    // Allow cycling through apps (left)
-ZMK_BEHAVIOR(A_SHORTCUTS,  macro, bindings = <&kp RA(F11)>;)    // Show this shortcuts visually 
-ZMK_BEHAVIOR(A_NOTIF,      macro, bindings = <&kp RA(F11)>;)    // Open notifications. Navigate with tab, close with esc.
-ZMK_BEHAVIOR(A_DEX,        macro, bindings = <&kp RA(F11)>;)    // Toggles DEX mode if the device supports it.
-ZMK_BEHAVIOR(A_SEARCH,     macro, bindings = <&kp RA(F11)>;)    // Open the search box on the internet browser.
+ZMK_BEHAVIOR(A_KILLAPP,    macro, bindings = <&kp LA(F4)>;)         // Closes the active app
+ZMK_BEHAVIOR(A_START,      macro, bindings = <&kp LG(RET)>;)        // Opens the application menu
+ZMK_BEHAVIOR(A_MENU,       macro, bindings = <&kp LA(A)>;)          // Opens the application menu
+ZMK_BEHAVIOR(A_CYCLEAPPL,  macro, bindings = <&kp LA(TAB)>;)        // Cycles through opened apps (left)
+ZMK_BEHAVIOR(A_CYCLEAPPR,  macro, bindings = <&kp LS(LA(TAB))>;)    // Allow cycling through apps (left)
+ZMK_BEHAVIOR(A_NOTIF,      macro, bindings = <&kp RA(F11)>;)        // Open notifications. Navigate with tab, close with esc.
+ZMK_BEHAVIOR(A_DEX,        macro, bindings = <&kp RA(F11)>;)        // Toggles DEX mode if the device supports it.
+ZMK_BEHAVIOR(A_FILEX,      macro, bindings = <&kp LS(LG(R))>;)      // Open default file browser
+ZMK_BEHAVIOR(A_WS1,        macro, bindings = <&kp LS(LG(N1))>;)     // WORKSPACE 1
+ZMK_BEHAVIOR(A_WS2,        macro, bindings = <&kp LS(LG(N2))>;)     // WORKSPACE 2
+ZMK_BEHAVIOR(A_WS3,        macro, bindings = <&kp LS(LG(N3))>;)     // WORKSPACE 3
+ZMK_BEHAVIOR(A_WS4,        macro, bindings = <&kp LS(LG(N4))>;)     // WORKSPACE 4
 

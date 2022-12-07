@@ -27,7 +27,7 @@ refer to the official documentation.
 VERBS
 -------------------------------------
 
-Operation to perform. 
+Operation to perform.
 
 ```
 i: insert before selection.
@@ -44,10 +44,10 @@ MODIFIERS
 They can be preceeded by a number, to indicate the n of elements affected.
 
 ```text
-i: inside 
+i: inside
 a: around
 t: until (inside)
-f: until (around) 
+f: until (around)
 /: until the search term (inside)
 ```
 
@@ -81,8 +81,8 @@ ci": change inside ""
 ci<: change inside <
 
 
-d2iw: delete 2 inside words. 
-c5aw: change 5 words. 
+d2iw: delete 2 inside words.
+c5aw: change 5 words.
 df{: delete until {
 dt{: delete until {, non-inclusive.
 d/potato: Delete until the word potato, non-inclusive.
@@ -107,7 +107,7 @@ MOTIONS
 Special keys to move faster in some scenarios.
 
 ```text
-%:   find partner ([{< 
+%:   find partner ([{<
 ):   next sentence.
 (:   prev sentence.
 }:   next paragraph
@@ -243,7 +243,7 @@ Just remember you can search during a visual selection.
 
 # SEARCH AND REPLACE
 
-99% of the time the time we'll only use
+99% of the time we'll only use
 
 * search <space>
 * search in project ,<space>
@@ -355,8 +355,8 @@ V<div>    Surround current selection with <div> (or any tag)
 Markdown:
 
 ```text
-,n        add unordered item  
-,ld       insert a line of dashes 
+,n        add unordered item
+,ld       insert a line of dashes
 ,lh       insert a line of hashes
 ```
 

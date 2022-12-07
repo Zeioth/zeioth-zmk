@@ -47,7 +47,7 @@ spanish querty. The firmware will convert it in real time to spanish WORKMAN lay
 
 * **I can't see my bluetooth keyboard from my device**: Well you should.
 ZMK makes itselft available all the time without you needing to do anything.
-That's why as security measurement, a probile cannot be re-paired  until
+That's why as security measurement, a profile cannot be re-paired  until
 cleared (see next point).
 * **I can't re-pair the keyboard**: You must make the device forget about the
 keyboard. And then in the keyboard config layer, you must choose the paired

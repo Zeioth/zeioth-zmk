@@ -24,6 +24,7 @@
 #define HYPER   4
 #define ARROW   5
 #define CONFIG  6
+#define ANDROID 7
 #define NONE    0
 
 // SPANISH KEYCODE ALIASES

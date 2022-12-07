@@ -41,9 +41,10 @@
 
 // TRI-LAYERS
 // ----------------------------------------------------------------------
-ZMK_CONDITIONAL_LAYER(SUPER RAISE,   HYPER   // SUPER y RAISE = HYPER
-ZMK_CONDITIONAL_LAYER(SUPER CONFIG, CONFIG)  // SUPER y CONFIG = CONFIG
-ZMK_CONDITIONAL_LAYER(LOWER RAISE, ANDROID)  // LOWER y RAISE = CONFIG    (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
+ZMK_CONDITIONAL_LAYER(SUPER RAISE,HYPER     // SUPER y RAISE  = HYPER
+ZMK_CONDITIONAL_LAYER(SUPER CONFIG,CONFIG)  // SUPER y CONFIG = CONFIG
+ZMK_CONDITIONAL_LAYER(LOWER RAISE,ANDROID)  // LOWER y RAISE  = CONFIG (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
+
 
 // KEYMAPS
 // ----------------------------------------------------------------------

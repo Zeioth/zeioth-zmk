@@ -132,7 +132,7 @@ ZMK_LAYER(android_layer,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &none         &none         &A_NOTIF      &A_SEARCH     &A_MENU       &none             &none         &A_CYCLEAPPL  &A_CYCLEAPPR  &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &none         &A_DEX        &none         &none         &none         &none             &none         &none         &none         &none         &none         &none
+          &none         &A_DEX        &none         &none         &A_START      &none             &none         &none         &none         &none         &none         &none
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                     &none         &none         &none             &none         &none         &none
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -250,9 +250,9 @@ ZMK_BEHAVIOR(M_VIM_HELP,    macro, bindings = <&kp LS(LG(V))>;)     // SHOW VIM 
 // ANDROID LAYER MACROS
 // -----------------------------------------------------------------------
 ZMK_BEHAVIOR(A_KILLAPP,    macro, bindings = <&kp LA(F4)>;)         // Closes the active app
-ZMK_BEHAVIOR(A_START,      macro, bindings = <&kp LG(RET)>;)        // Opens the application menu
+ZMK_BEHAVIOR(A_START,      macro, bindings = <&kp LG(RET)>;)        // Go to the main screen
 ZMK_BEHAVIOR(A_MENU,       macro, bindings = <&kp LA(A)>;)          // Opens the application menu
-ZMK_BEHAVIOR(A_SEARCH,     macro, bindings = <&kp LG(F)>;)          // Android's internet browsers search shortcut (wft)
+ZMK_BEHAVIOR(A_SEARCH,     macro, bindings = <&kp LG(F)>;)          // Search and open an application
 ZMK_BEHAVIOR(A_NOTIF,      macro, bindings = <&kp RA(F11)>;)        // Open notifications. Navigate with tab, close with esc
 ZMK_BEHAVIOR(A_DEX,        macro, bindings = <&kp LGUI(W)>;)        // Toggles DEX mode if the device supports it
 ZMK_BEHAVIOR(A_FILEX,      macro, bindings = <&kp LS(LG(R))>;)      // Open default file browser

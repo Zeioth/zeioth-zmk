@@ -7,7 +7,7 @@ My wireless keyboard firmware.
 * Shortcut the pins grd/rst twice in < 500ms to enter flash mode.
   A blue led will turn on on the board.
 * A new device should have appeared in your computer.
-* On terminal, copy your FS2 file.
+* Copy your FS2 file into it, and wait until it finishes.
 * Your file browser will close automatically. And the device will be unmounted.
   This is normal, it means all is ok. You can now try to pair the device with
   your phone.

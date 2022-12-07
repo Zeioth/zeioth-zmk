@@ -158,8 +158,8 @@ ZMK_BEHAVIOR(I3_KILL,       macro, bindings = <&kp LS(LG(Q))>;)     // I3 KILL
 ZMK_BEHAVIOR(I3_XKILL,      macro, bindings = <&kp LS(LG(X))>;)     // I3 XKILL
 ZMK_BEHAVIOR(I3_PW,         macro, bindings = <&kp LG(PG_DN)>;)     // I3 PREVIOUS WINDOW
 ZMK_BEHAVIOR(I3_NW,         macro, bindings = <&kp LG(PG_UP)>;)     // I3 NEXT WINDOW
-//ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LS(LG(C))>, LS(LG(R))>;)     // I3 RESET
-ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LS(LG(C))>, <&kp LS(LG(R))>;) // I3 RESET
+ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LS(LG(C))>, 
+                                              <&kp LS(LG(R))>;)     // I3 RESET
 ZMK_BEHAVIOR(I3_FLOAT,      macro, bindings = <&kp LS(LG(SPACE))>;) // I3 FLOAT (TOGGLE)
 
 // LOWER LAYER MACROS

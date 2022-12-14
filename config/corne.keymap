@@ -170,7 +170,7 @@ ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LS(LG(C))>,
                                               <&kp LS(LG(R))>;)     // I3 RESET
 ZMK_BEHAVIOR(I3_FLOAT,      macro, bindings = <&kp LS(LG(SPACE))>;) // I3 FLOAT (TOGGLE)
 ZMK_BEHAVIOR(I3_XKILL,      macro, bindings = <&kp LS(LG(X))>;)     // I3 XKILL
-ZMK_BEHAVIOR(I3_KILL,       mod_morph, bindings = <&none>, <&kp LS(LG(Q))>>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // I3 KILL
+ZMK_BEHAVIOR(I3_KILL,       mod_morph, bindings = <&none>, <&kp LS(LG(Q))>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // I3 KILL
 
 // LOWER LAYER MACROS
 // -----------------------------------------------------------------------

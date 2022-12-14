@@ -75,7 +75,7 @@ ZMK_LAYER(lower_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬──────────────┬─────────────┬─────────────┬─────────────╮
           &kp LGUI      &kp N4        &kp N3        &kp N2        &kp N1        &kp N5            &kp N0        &kp N6        &kp N7         &kp N8        &kp N9        &kp RALT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL     &CKC_EXCLAM   &CKC_HASH     &CKC_QUOT     &CKC_DQUOT    &CKC_PERC         &kp RBRC      &CKC_MINUS    &CKC_ASTERISK  &CKC_SLASH    &CKC_EQUAL    &mt LALT ESC
+          &kp LCTRL     &CKC_EXCLAM   &CKC_HASH     &CKC_QUOT     &CKC_DQUOT    &CKC_PERC         &CKC_PLUS     &CKC_MINUS    &CKC_ASTERISK  &CKC_SLASH    &CKC_EQUAL    &mt LALT ESC
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
           &kp LSHFT     &CKC_LESS     &CKC_MORE     &CKC_O_PAR    &CKC_C_PAR    &CKC_AND          &CKC_OR       &CKC_C_CUR    &CKC_O_CUR     &CKC_C_BRK    &CKC_O_BRK    &CKC_RSFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
@@ -181,7 +181,7 @@ ZMK_BEHAVIOR(CKC_DQUOT,    mod_morph, bindings = <&kp LS(N2)>,      <&kp LS(ES_A
 ZMK_BEHAVIOR(CKC_QMA,      mod_morph, bindings = <&kp LS(ES_QUOT)>, <&kp LS(ES_IEXL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ? and ¿
 ZMK_BEHAVIOR(CKC_EXCLAM,   mod_morph, bindings = <&kp LS(N1)>,      <&kp ES_IEXL>;      mods = <(MOD_LSFT|MOD_RSFT)>;) // ! and ¡
 ZMK_BEHAVIOR(CKC_PERC,     mod_morph, bindings = <&kp LS(N5)>,      <&kp RA(N6)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // % and ¬
-ZMK_BEHAVIOR(CKC_PLUS,     mod_morph, bindings = <&kp ES_PLUS>,     <&kp RA(N2)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // +
+ZMK_BEHAVIOR(CKC_PLUS,     mod_morph, bindings = <&kp RBRC>,        <&kp RA(N2)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // +
 ZMK_BEHAVIOR(CKC_MINUS,    mod_morph, bindings = <&kp ES_MINS>,     <&kp LS(ES_MINS)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // - and _
 ZMK_BEHAVIOR(CKC_ASTERISK, mod_morph, bindings = <&kp LS(ES_PLUS)>, <&kp LS(ES_GRV)>;   mods = <(MOD_LSFT|MOD_RSFT)>;) // * and ^
 ZMK_BEHAVIOR(CKC_SLASH,    mod_morph, bindings = <&kp LS(N7)>,      <&kp RA(ES_MORD)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // '/' and '\'

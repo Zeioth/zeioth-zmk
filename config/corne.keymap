@@ -164,13 +164,13 @@ ZMK_BEHAVIOR(I3_RESIZE,     macro, bindings = <&kp LS(LG(R))>;)     // I3 RESIZE
 ZMK_BEHAVIOR(I3_MOVE,       macro, bindings = <&kp LS(LG(A))>;)     // I3 MOVE MODE
 ZMK_BEHAVIOR(I3_SPAD,       macro, bindings = <&kp LG(ES_MINS)>;)   // I3 SCRATCHPAD (CYCLE)
 ZMK_BEHAVIOR(I3_WINTAB,     macro, bindings = <&kp LG(TAB)>;)       // I3 WINTAB
-ZMK_BEHAVIOR(I3_KILL,       macro, bindings = <&kp LS(LG(Q))>;)     // I3 KILL
-ZMK_BEHAVIOR(I3_XKILL,      macro, bindings = <&kp LS(LG(X))>;)     // I3 XKILL
 ZMK_BEHAVIOR(I3_PW,         macro, bindings = <&kp LG(PG_DN)>;)     // I3 PREVIOUS WINDOW
 ZMK_BEHAVIOR(I3_NW,         macro, bindings = <&kp LG(PG_UP)>;)     // I3 NEXT WINDOW
 ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LS(LG(C))>, 
                                               <&kp LS(LG(R))>;)     // I3 RESET
 ZMK_BEHAVIOR(I3_FLOAT,      macro, bindings = <&kp LS(LG(SPACE))>;) // I3 FLOAT (TOGGLE)
+ZMK_BEHAVIOR(I3_XKILL,      macro, bindings = <&kp LS(LG(X))>;)     // I3 XKILL
+ZMK_BEHAVIOR(I3_KILL,       mod_morph, bindings = <&none>, <&kp LS(LG(Q))>>;            mods = <(MOD_LSFT|MOD_RSFT)>;) // I3 KILL
 
 // LOWER LAYER MACROS
 // -----------------------------------------------------------------------

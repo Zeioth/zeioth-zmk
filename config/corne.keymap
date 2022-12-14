@@ -66,9 +66,9 @@ ZMK_LAYER(super_layer,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼───────────────┼─────────────┼─────────────┤
           &kp LCTRL     &M_WS7        &M_WS1        &M_WS2        &M_WS3        &I3_FS            &I3_WINTAB    &M_WS4        &M_WS5        &M_WS6         &M_WS8        &mt LALT ESC
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼───────────────┼─────────────┼─────────────┤
-          &kp LSHFT     &I3_DISPLAYS  &I3_RESIZE    &I3_MOVE      &I3_SPAD      &none             &I3_FLOAT     &I3_PW        &I3_NW        &I3_SCREENSHOT &I3_RESET     &kp RSHFT
+          &kp LSHFT     &I3_DISPLAYS  &I3_RESIZE    &I3_MOVE      &I3_SPAD      &none             &none         &I3_PW        &I3_NW        &I3_SCREENSHOT &I3_RESET     &kp RSHFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼───────────────┼─────────────┼─────────────┤
-                                                    &mo SUPER    &mo LOWER      &mo CONFIG        &none         &mo RAISE     &mt LALT ESC
+                                                    &mo SUPER    &mo LOWER      &mo CONFIG        &I3_FLOAT     &mo RAISE     &mt LALT ESC
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 ZMK_LAYER(lower_layer,
@@ -254,9 +254,9 @@ ZMK_BEHAVIOR(A_CYCLEAPPR,  macro, bindings = <&kp LS(LA(TAB))>;)    // Allow cyc
 ZMK_BEHAVIOR(A_START,      macro, bindings = <&kp LG(RET)>;)        // Go to the main screen
 ZMK_BEHAVIOR(A_KILLAPP,    macro, bindings = <&kp LA(F4)>;)         // Closes the active app
 ZMK_BEHAVIOR(A_SEARCH,     macro, bindings = <&kp LG(F)>;)          // Search and open an application
-ZMK_BEHAVIOR(A_NOTIF,      macro, bindings = <&kp RA(F11)>;)        // Open notifications. Navigate with tab, close with esc
+ZMK_BEHAVIOR(A_NOTIF,      macro, bindings = <&kp RG(N)>;)          // Open notifications. Navigate with tab, close with esc
 ZMK_BEHAVIOR(A_DEX,        macro, bindings = <&kp LG(W)>;)          // Toggles DEX mode if the device supports it
 ZMK_BEHAVIOR(A_FILEX,      macro, bindings = <&kp LS(LG(R))>;)      // Open default file browser
 ZMK_BEHAVIOR(A_MENU,       macro, bindings = <&kp LG(RET)>,
-                                             <&kp LA(A)>;)          // Opens the application menu
+                                             <&kp LA(A)>;)          // Open the application menu
 

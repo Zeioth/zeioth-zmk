@@ -40,15 +40,6 @@
 #define ES_LABK NUBS  // <
 #define ES_CCED NUHS  // Ç
 
-// TRI-LAYERS
-// ----------------------------------------------------------------------
-ZMK_CONDITIONAL_LAYER(SUPER CONFIG, CONFIG)   // SUPER y CONFIG = CONFIG
-
-ZMK_CONDITIONAL_LAYER(SUPER RAISE,  HYPER)    // RAISE y SUPER  = HYPER
-ZMK_CONDITIONAL_LAYER(RAISE SUPER,  HYPER)    // SUPER y RAISE  = HYPER
-
-ZMK_CONDITIONAL_LAYER(LOWER RAISE,  ANDROID)  // LOWER y RAISE  = ANDROID (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
-ZMK_CONDITIONAL_LAYER(RAISE LOWER,  ANDROID)  // RAISE y LOWER  = ANDROID (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
 
 
 // KEYMAPS

@@ -44,11 +44,12 @@
 // ----------------------------------------------------------------------
 ZMK_CONDITIONAL_LAYER(SUPER CONFIG, CONFIG)   // SUPER y CONFIG = CONFIG
 
-ZMK_CONDITIONAL_LAYER(LOWER RAISE,  ANDROID)  // LOWER y RAISE  = CONFIG (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
-ZMK_CONDITIONAL_LAYER(RAISE LOWER,  ANDROID)  // RAISE y LOWER  = CONFIG (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
-
 ZMK_CONDITIONAL_LAYER(SUPER RAISE,  HYPER)    // RAISE y SUPER  = HYPER
 ZMK_CONDITIONAL_LAYER(RAISE SUPER,  HYPER)    // SUPER y RAISE  = HYPER
+
+ZMK_CONDITIONAL_LAYER(LOWER RAISE,  ANDROID)  // LOWER y RAISE  = ANDROID (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
+ZMK_CONDITIONAL_LAYER(RAISE LOWER,  ANDROID)  // RAISE y LOWER  = ANDROID (Once layer swap is implemented in ZMK (#1572), use it to create a mode, instead of a tri-layer)
+
 
 // KEYMAPS
 // ----------------------------------------------------------------------
@@ -72,7 +73,7 @@ ZMK_LAYER(super_layer,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼───────────────┼─────────────┼─────────────┤
           &kp LSHFT     &I3_DISPLAYS  &I3_RESIZE    &I3_MOVE      &I3_SPAD      &none             &none         &I3_PW        &I3_NW        &I3_SCREENSHOT &I3_RESET     &kp RSHFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼───────────────┼─────────────┼─────────────┤
-                                                    &mo SUPER    &mo LOWER      &mo CONFIG        &I3_FLOAT     &mo RAISE     &mt LALT ESC
+                                                    &mo SUPER    &mo LOWER      &mo CONFIG        &I3_FLOAT     &mo HYPER     &mt LALT ESC
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 ZMK_LAYER(lower_layer,
@@ -83,7 +84,7 @@ ZMK_LAYER(lower_layer,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
           &kp LSHFT     &CKC_LESS     &CKC_MORE     &CKC_O_PAR    &CKC_C_PAR    &CKC_AND          &CKC_OR       &CKC_C_CUR    &CKC_O_CUR     &CKC_C_BRK    &CKC_O_BRK    &CKC_RSFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &mo SUPER     &mo LOWER     &kp TAB           &kp TAB       &mo RAISE     &kp DEL
+                                                    &mo HYPER     &mo LOWER     &kp TAB           &kp TAB       &mo ANDROID   &kp DEL
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴──────────────╯
 )
 ZMK_LAYER(raise_layer,
@@ -94,7 +95,7 @@ ZMK_LAYER(raise_layer,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
           &kp LSHFT     &VIM_VIT      &VIM_VIP      &VIM_VIS      &VIM_VIW      &VIM_VIB          &none         &VIM_GMD      &VIM_GMU      &VIM_GTD       &VIM_GTU      &CKC_RSFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &mo SUPER     &mo LOWER     &CKC_CTRLBS       &CKC_CTRLBS   &mo RAISE     &none
+                                                    &mo HYPER     &mo ANDROID   &CKC_CTRLBS       &CKC_CTRLBS   &mo RAISE     &none
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴──────────────╯
 )
 ZMK_LAYER(hyper_layer,

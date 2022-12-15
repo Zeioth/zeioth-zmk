@@ -58,7 +58,7 @@ layer and press the CLEAR key. Now you should be able to re-pair both.
 * **After I flash the firmware, if I reconnect the controller to the PC I only
 see the default files**: Again, this is for security, so no one can modify your
 firmware once flashed (easily).
-* **My file browser don't close automatically after copying the firmware**:
+* **My file browser doesn't close automatically after copying the firmware**:
   Try to copy the file a second time without resetting, it should auto-close
   this time. Reported to happen in some versions of thunar.
 

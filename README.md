@@ -17,10 +17,13 @@ find them there.
 
 ## Commands to re-flash the bootloader
 
-Under normal circumstances this should not be necessary, but it can be done with
+Under normal circumstances this should not be necessary,
+but it can be done by entering in bootloader mode and running
 
     pip3 uninstall --user adafruit-nrfutil
-    sudo adafruit-nrfutil --verbose dfu serial --package nice_nano_bootloader-_s140_6.1.1.zip -p /dev/ttyS0 -b 115200 --singlebank --touch 1200
+    sudo adafruit-nrfutil --verbose dfu serial --package nice_nano_bootloader-_current_version.zip -p /dev/ttyS0 -b 115200 --singlebank --touch 1200
+
+It is recommended to do it in this order: "bootloader flash → turn off & wait 5s → flash firmware". Repeat the process until the nicenanos unmount themselves after flashing. You can find the latest version [here](https://nicekeyboards.com/docs/nice-nano/troubleshooting).
 
 ## REQUIREMENTS
 
@@ -55,7 +58,10 @@ layer and press the CLEAR key. Now you should be able to re-pair both.
 * **After I flash the firmware, if I reconnect the controller to the PC I only
 see the default files**: Again, this is for security, so no one can modify your
 firmware once flashed (easily).
-
+* **My keyboard or one of the sides still doesn't connect with android:** Try
+  giving it a couple minutes to pair correctly. Sometimes do the trick.
+* **Something else?:** In order to avoid ghost current issues, test always with
+  the same cable. Specially if you are using a magnetic one.
 ## Docs
 
 * https://docs.nicekeyboards.com/#/nice!nano/troubleshooting

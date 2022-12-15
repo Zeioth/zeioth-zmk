@@ -41,7 +41,6 @@
 #define ES_CCED NUHS  // Ç
 
 
-
 // KEYMAPS
 // ----------------------------------------------------------------------
 ZMK_LAYER(default_layer, //  ########################################################################################################################################################
@@ -217,19 +216,19 @@ ZMK_BEHAVIOR(VIM_GTU,      macro, bindings = <&kp G>, <&kp T>, <&kp U>;) // Go t
 
 // HYPER LAYER MACROS
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(M_CBACKUP,         macro, bindings = <&kp RA(F11)>;)    // Spawns a term → Encrypted backup to the cloud
-ZMK_BEHAVIOR(M_UPDATE_PACKAGES, macro, bindings = <&kp LC(RA(B))>;)  // Spawns a term → Perform system update
-ZMK_BEHAVIOR(M_ROFI,            macro, bindings = <&kp RA(D)>;)      // Spawns the application launcher
-ZMK_BEHAVIOR(M_ROFI_SHORTCUTS,  macro, bindings = <&kp LC(RA(S))>;)  // Spawns rofi-shortcuts by zeioth
-ZMK_BEHAVIOR(M_ROFI_EMOJI,      macro, bindings = <&kp LC(RA(E))>;)  // Shows all emojis and copy selection to clipboard
-ZMK_BEHAVIOR(M_CALC,            macro, bindings = <&kp RA(F8)>;)     // Open calculator
-ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(RA(M))>;)  // Open rofi-zeal by zeioth 
+ZMK_BEHAVIOR(M_CBACKUP,         macro, bindings = <&kp LG(F11)>;)    // Spawns a term → Encrypted backup to the cloud
+ZMK_BEHAVIOR(M_UPDATE_PACKAGES, macro, bindings = <&kp LC(LG(B))>;)  // Spawns a term → Perform system update
+ZMK_BEHAVIOR(M_ROFI,            macro, bindings = <&kp LG(D)>;)      // Spawns the application launcher
+ZMK_BEHAVIOR(M_ROFI_SHORTCUTS,  macro, bindings = <&kp LC(LG(S))>;)  // Spawns rofi-shortcuts by zeioth
+ZMK_BEHAVIOR(M_ROFI_EMOJI,      macro, bindings = <&kp LC(LG(E))>;)  // Shows all emojis and copy selection to clipboard
+ZMK_BEHAVIOR(M_CALC,            macro, bindings = <&kp LG(F8)>;)     // Open calculator
+ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(LG(M))>;)  // Open rofi-zeal by zeioth 
 ZMK_BEHAVIOR(M_ROFI_DOCS,       macro, bindings = <&kp LS(LG(T))>;)  // Open rofi and browse in the documentation of my projects
 ZMK_BEHAVIOR(M_ROFI_ACTIVITIES, macro, bindings = <&kp LG(T)>;)      // Open the activities  selector
-ZMK_BEHAVIOR(M_RANGER,          macro, bindings = <&kp RA(F1)>;)     // Open ranger TUI file browser 
-ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp RA(F12)>;)    // Open GUI file browser 
-ZMK_BEHAVIOR(M_VIM,             macro, bindings = <&kp RA(F10)>;)    // Open VIM 
-ZMK_BEHAVIOR(M_WEATHER,         macro, bindings = <&kp LC(RA(W))>;)  // Open TUI weather 
+ZMK_BEHAVIOR(M_RANGER,          macro, bindings = <&kp LG(F1)>;)     // Open ranger TUI file browser 
+ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp LG(F12)>;)    // Open GUI file browser 
+ZMK_BEHAVIOR(M_VIM,             macro, bindings = <&kp LG(F10)>;)    // Open VIM 
+ZMK_BEHAVIOR(M_WEATHER,         macro, bindings = <&kp LC(LG(W))>;)  // Open TUI weather 
 
 // ARROW MODE LAYER MACROS
 // -----------------------------------------------------------------------

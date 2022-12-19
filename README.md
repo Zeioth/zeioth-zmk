@@ -32,7 +32,7 @@ spanish querty. The firmware will convert it in real time to spanish WORKMAN lay
 
 ## LAYERS
 
-* **Default**: Workman layout + spanish ñ + dedicated key for tilde.
+* **Default**: Colemak-dh layout + spanish ñ + dedicated key for tilde.
 * **Super**: Full integration with I3/SWAY keybinds (default ones, and some extras).
 * **Lower**: Characters + numbers. Because all characters you can achieve with RALT
          already exist in this layer, we don't have RALT key at all.

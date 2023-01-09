@@ -139,7 +139,7 @@ ZMK_LAYER(android_layer,
 ZMK_BEHAVIOR(CKC_CTRLBS, macro,     bindings = <&kp LC(BSPC)>;)                                      // CTRL+BACKSPACE
 ZMK_BEHAVIOR(CKC_BSPC,   mod_morph, bindings = <&kp BSPC>, <&kp DEL>; mods = <(MOD_LSFT|MOD_RSFT)>;) // BACKSPACE AND DEL
 ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&tog ARROW>;  mods = <(MOD_LSFT)>;)     // Enable and lock ARROW MODE when LSHIFT+RSHIFT are holded together in that order.
-ZMK_BEHAVIOR(CKC_QMARK,  mod_morph, bindings = <&kp LG(KP_MINUS)>, <&kp LG(KP_EQUAL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;)     // Enable and lock ARROW MODE when LSHIFT+RSHIFT are holded together in that order.
+ZMK_BEHAVIOR(CKC_QMARK,  mod_morph, bindings = <&kp LS(KP_MINUS)>, <&kp LS(KP_EQUAL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ? and ¿
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------

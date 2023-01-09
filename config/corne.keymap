@@ -50,7 +50,7 @@ ZMK_LAYER(default_layer, //  ###################################################
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O         &CKC_ACCENT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHFT     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH      &CKC_RSFT
+          &kp LSHFT     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &CKC_QMARK      &CKC_RSFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                     smo SUPER     &mo LOWER     &kp SPACE         &kp RET       &mo RAISE     &mt LALT ESC
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -139,7 +139,7 @@ ZMK_LAYER(android_layer,
 ZMK_BEHAVIOR(CKC_CTRLBS, macro,     bindings = <&kp LC(BSPC)>;)                                      // CTRL+BACKSPACE
 ZMK_BEHAVIOR(CKC_BSPC,   mod_morph, bindings = <&kp BSPC>, <&kp DEL>; mods = <(MOD_LSFT|MOD_RSFT)>;) // BACKSPACE AND DEL
 ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&tog ARROW>;  mods = <(MOD_LSFT)>;)     // Enable and lock ARROW MODE when LSHIFT+RSHIFT are holded together in that order.
-ZMK_BEHAVIOR(CKC_QMARK,  mod_morph, bindings = <&kp LS(KP_MINUS)>, <&kp LS(KP_EQUAL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ? and ¿
+ZMK_BEHAVIOR(CKC_QMARK,  mod_morph, bindings = <&kp LS(MINUS)>, <&kp LS(EQUAL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ? and ¿
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------

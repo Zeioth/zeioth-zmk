@@ -52,7 +52,7 @@ ZMK_LAYER(default_layer, //  ###################################################
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LSHFT     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH      &CKC_RSFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                    &mo SUPER     &mo LOWER     &kp SPACE         &kp RET       &mo RAISE     &mt LALT ESC
+                                                    smo SUPER     &mo LOWER     &kp SPACE         &kp RET       &mo RAISE     &mt LALT ESC
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 ZMK_LAYER(super_layer,
@@ -139,6 +139,7 @@ ZMK_LAYER(android_layer,
 ZMK_BEHAVIOR(CKC_CTRLBS, macro,     bindings = <&kp LC(BSPC)>;)                                      // CTRL+BACKSPACE
 ZMK_BEHAVIOR(CKC_BSPC,   mod_morph, bindings = <&kp BSPC>, <&kp DEL>; mods = <(MOD_LSFT|MOD_RSFT)>;) // BACKSPACE AND DEL
 ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>, <&tog ARROW>;  mods = <(MOD_LSFT)>;)     // Enable and lock ARROW MODE when LSHIFT+RSHIFT are holded together in that order.
+ZMK_BEHAVIOR(CKC_QMARK,  mod_morph, bindings = <&kp LG(KP_MINUS)>, <&kp LG(KP_EQUAL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;)     // Enable and lock ARROW MODE when LSHIFT+RSHIFT are holded together in that order.
 
 // SUPER LAYER MACROS 
 // -----------------------------------------------------------------------

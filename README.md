@@ -28,7 +28,7 @@ You can find the latest version [here](https://nicekeyboards.com/docs/nice-nano/
 ## REQUIREMENTS
 
 This firmware is for spanish. Your system's keyboard distribution must be
-spanish querty. The firmware will convert it in real time to spanish WORKMAN layout.
+spanish querty. The firmware will convert it in real time to spanish COLEMAK DH layout.
 
 ## LAYERS
 

@@ -79,11 +79,11 @@ ZMK_LAYER(lower_layer,
 )
 ZMK_LAYER(raise_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬──────────────┬─────────────┬─────────────┬─────────────╮
-          &kp LGUI      &VIM_DIT      &VIM_DIP      &VIM_DIS      &VIM_DIW      &VIM_DIB          &kp HOME      &kp END       &kp PAGE_DOWN &kp PAGE_UP    &none         &none
+          &kp LGUI      &VIM_DOT      &VIM_DOP      &VIM_DOS      &VIM_DOW      &VIM_DOB          &kp HOME      &kp END       &kp PAGE_DOWN &kp PAGE_UP    &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL     &VIM_CIT      &VIM_CIP      &VIM_CIS      &VIM_CIW      &VIM_CIB          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &none         &none
+          &kp LCTRL     &VIM_COT      &VIM_COP      &VIM_COS      &VIM_COW      &VIM_COB          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHFT     &VIM_VIT      &VIM_VIP      &VIM_VIS      &VIM_VIW      &VIM_VIB          &none         &VIM_GMD      &VIM_GMU      &VIM_GTD       &VIM_GTU      &CKC_RSFT
+          &kp LSHFT     &VIM_VOT      &VIM_VOP      &VIM_VOS      &VIM_VOW      &VIM_VOB          &none         &VIM_GMD      &VIM_GMU      &VIM_GTD       &VIM_GTU      &CKC_RSFT
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤
                                                     &mo HYPER     &mo ANDROID   &CKC_CTRLBS       &CKC_CTRLBS   &mo RAISE     &none
      //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴──────────────╯
@@ -195,19 +195,19 @@ ZMK_BEHAVIOR(CKC_C_BRK,    mod_morph, bindings = <&kp RA(ES_PLUS)>, <&kp RA(ES_P
 
 // RAISE LAYER MACROS
 // -----------------------------------------------------------------------
-ZMK_BEHAVIOR(VIM_CIT,      macro, bindings = <&kp C>, <&kp I>, <&kp T>;) // change inner tag
-ZMK_BEHAVIOR(VIM_CIP,      macro, bindings = <&kp C>, <&kp I>, <&kp P>;) // change inner paragraph
-ZMK_BEHAVIOR(VIM_CIS,      macro, bindings = <&kp C>, <&kp I>, <&kp S>;) // change inner sentence
-ZMK_BEHAVIOR(VIM_CIW,      macro, bindings = <&kp C>, <&kp I>, <&kp W>;) // change inner word
-ZMK_BEHAVIOR(VIM_CIB,      macro, bindings = <&kp C>, <&kp I>, <&kp B>;) // change inner block of code {}
-ZMK_BEHAVIOR(VIM_VIT,      macro, bindings = <&kp V>, <&kp I>, <&kp T>;) // visual inner tag (selection)
-ZMK_BEHAVIOR(VIM_VIP,      macro, bindings = <&kp V>, <&kp I>, <&kp P>;) // visual inner paragraph (selection)
-ZMK_BEHAVIOR(VIM_VIS,      macro, bindings = <&kp V>, <&kp I>, <&kp S>;) // visual inner sentence (selection)
-ZMK_BEHAVIOR(VIM_VIW,      macro, bindings = <&kp V>, <&kp I>, <&kp W>;) // visual inner word (selection)
-ZMK_BEHAVIOR(VIM_VIB,      macro, bindings = <&kp V>, <&kp I>, <&kp B>;) // visual inner block of code {}
-ZMK_BEHAVIOR(VIM_DIT,      macro, bindings = <&kp D>, <&kp I>, <&kp T>;) // delete inner tag
-ZMK_BEHAVIOR(VIM_DIP,      macro, bindings = <&kp D>, <&kp I>, <&kp P>;) // delete inner paragraph
-ZMK_BEHAVIOR(VIM_DIS,      macro, bindings = <&kp D>, <&kp I>, <&kp S>;) // delete inner sentence
+ZMK_BEHAVIOR(VIM_COT,      macro, bindings = <&kp C>, <&kp I>, <&kp T>;) // change inner tag
+ZMK_BEHAVIOR(VIM_COP,      macro, bindings = <&kp C>, <&kp I>, <&kp P>;) // change inner paragraph
+ZMK_BEHAVIOR(VIM_COS,      macro, bindings = <&kp C>, <&kp I>, <&kp S>;) // change inner sentence
+ZMK_BEHAVIOR(VIM_COW,      macro, bindings = <&kp C>, <&kp I>, <&kp W>;) // change inner word
+ZMK_BEHAVIOR(VIM_COB,      macro, bindings = <&kp C>, <&kp I>, <&kp B>;) // change inner block of code {}
+ZMK_BEHAVIOR(VIM_VOT,      macro, bindings = <&kp V>, <&kp I>, <&kp T>;) // visual inner tag (selection)
+ZMK_BEHAVIOR(VIM_VOP,      macro, bindings = <&kp V>, <&kp I>, <&kp P>;) // visual inner paragraph (selection)
+ZMK_BEHAVIOR(VIM_VOS,      macro, bindings = <&kp V>, <&kp I>, <&kp S>;) // visual inner sentence (selection)
+ZMK_BEHAVIOR(VIM_VOW,      macro, bindings = <&kp V>, <&kp I>, <&kp W>;) // visual inner word (selection)
+ZMK_BEHAVIOR(VIM_VOB,      macro, bindings = <&kp V>, <&kp I>, <&kp B>;) // visual inner block of code {}
+ZMK_BEHAVIOR(VIM_DOT,      macro, bindings = <&kp D>, <&kp I>, <&kp T>;) // delete inner tag
+ZMK_BEHAVIOR(VIM_DOP,      macro, bindings = <&kp D>, <&kp I>, <&kp P>;) // delete inner paragraph
+ZMK_BEHAVIOR(VIM_DOS,      macro, bindings = <&kp D>, <&kp I>, <&kp S>;) // delete inner sentence
 ZMK_BEHAVIOR(VIM_DIW,      macro, bindings = <&kp D>, <&kp I>, <&kp W>;) // delete inner word
 ZMK_BEHAVIOR(VIM_DIB,      macro, bindings = <&kp D>, <&kp I>, <&kp B>;) // delete inner block of code {}
 ZMK_BEHAVIOR(VIM_GMD,      macro, bindings = <&kp G>, <&kp D>, <&kp M>;) // Go method - down [m

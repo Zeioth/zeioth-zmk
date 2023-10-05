@@ -227,7 +227,7 @@ ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(LG(M))>;)  // Open rof
 ZMK_BEHAVIOR(M_ROFI_DOCS,       macro, bindings = <&kp LS(LG(T))>;)  // Open rofi and browse in the documentation of my projects
 ZMK_BEHAVIOR(M_ROFI_ACTIVITIES, macro, bindings = <&kp LG(T)>;)      // Open the activities  selector
 ZMK_BEHAVIOR(M_RANGER,          macro, bindings = <&kp LG(F1)>;)     // Open ranger TUI file browser 
-ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp LG(F12)>;)    // Open GUI file browser 
+ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp LG(F2)>;)     // Open GUI file browser 
 ZMK_BEHAVIOR(M_VIM,             macro, bindings = <&kp LG(F10)>;)    // Open VIM 
 ZMK_BEHAVIOR(M_WEATHER,         macro, bindings = <&kp LC(LG(W))>;)  // Open TUI weather 
 

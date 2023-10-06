@@ -2,9 +2,9 @@
 // License: Creative Commons 3.0
 
 
-/* PERSONAL NOTES: 
+/* PERSONAL NOTES:
  1. On vim you can enable C syntax for this file:
-    :set syntax=C 
+    :set syntax=C
 */
 
 // TODOS: La tecla launcher de hyper no parece funcionar?
@@ -134,14 +134,14 @@ ZMK_LAYER(android_layer,
 )
 
 
-// BASE LAYER MACROS 
+// BASE LAYER MACROS
 // -----------------------------------------------------------------------
 ZMK_BEHAVIOR(CKC_CTRLBS, macro,     bindings = <&kp LC(BSPC)>;)                                                  // CTRL+BACKSPACE
 ZMK_BEHAVIOR(CKC_BSPC,   mod_morph, bindings = <&kp BSPC>,      <&kp DEL>;        mods = <(MOD_LSFT|MOD_RSFT)>;) // BACKSPACE AND DEL
 ZMK_BEHAVIOR(CKC_RSFT,   mod_morph, bindings = <&kp RSHFT>,     <&tog ARROW>;     mods = <(MOD_LSFT)>;)          // Enable and lock ARROW MODE when LSHIFT+RSHIFT are holded together in that order.
 ZMK_BEHAVIOR(CKC_QMARK,  mod_morph, bindings = <&kp LS(MINUS)>, <&kp LS(EQUAL)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ? and ¿
 
-// SUPER LAYER MACROS 
+// SUPER LAYER MACROS
 // -----------------------------------------------------------------------
 ZMK_BEHAVIOR(M_WS1,         macro, bindings = <&kp LG(N1)>;)        // WORKSPACE 1
 ZMK_BEHAVIOR(M_WS2,         macro, bindings = <&kp LG(N2)>;)        // WORKSPACE 2
@@ -156,13 +156,13 @@ ZMK_BEHAVIOR(M_PWMENU,      macro, bindings = <&kp LS(LG(E))>;)     // POWER MEN
 ZMK_BEHAVIOR(I3_FS,         macro, bindings = <&kp LG(F)>;)         // I3 FULL SCREEN
 ZMK_BEHAVIOR(I3_DISPLAYS,   macro, bindings = <&kp LS(LG(D))>;)     // I3 DISPLAY MODE
 ZMK_BEHAVIOR(I3_SCREENSHOT, macro, bindings = <&kp LS(LG(S))>;)     // I3 SCREENSHOT MODE
-ZMK_BEHAVIOR(I3_RESIZE,     macro, bindings = <&kp LS(LG(R))>;)     // I3 RESIZE MODE
+ZMK_BEHAVIOR(I3_RESIZE,     macro, bindings = <&kp LG(R)>;)     // I3 RESIZE MODE
 ZMK_BEHAVIOR(I3_MOVE,       macro, bindings = <&kp LS(LG(A))>;)     // I3 MOVE MODE
 ZMK_BEHAVIOR(I3_SPAD,       macro, bindings = <&kp LG(ES_MINS)>;)   // I3 SCRATCHPAD (CYCLE)
 ZMK_BEHAVIOR(I3_WINTAB,     macro, bindings = <&kp LG(TAB)>;)       // I3 WINTAB
 ZMK_BEHAVIOR(I3_PW,         macro, bindings = <&kp LG(PG_DN)>;)     // I3 PREVIOUS WINDOW
 ZMK_BEHAVIOR(I3_NW,         macro, bindings = <&kp LG(PG_UP)>;)     // I3 NEXT WINDOW
-ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LS(LG(C))>, 
+ZMK_BEHAVIOR(I3_RESET,      macro, bindings = <&kp LS(LG(C))>,
                                               <&kp LS(LG(R))>;)     // I3 RESET
 ZMK_BEHAVIOR(I3_FLOAT,      macro, bindings = <&kp LS(LG(SPACE))>;) // I3 FLOAT (TOGGLE)
 ZMK_BEHAVIOR(I3_XKILL,      macro, bindings = <&kp LS(LG(X))>;)     // I3 XKILL
@@ -186,9 +186,9 @@ ZMK_BEHAVIOR(CKC_LESS,     mod_morph, bindings = <&kp ES_LABK>,     <&kp RA(Y)>;
 ZMK_BEHAVIOR(CKC_MORE,     mod_morph, bindings = <&kp LS(ES_LABK)>, <&kp RA(I)>;        mods = <(MOD_LSFT|MOD_RSFT)>;) // > and →
 ZMK_BEHAVIOR(CKC_O_PAR,    mod_morph, bindings = <&kp LS(N8)>,      <&kp RA(E)>;        mods = <(MOD_LSFT|MOD_RSFT)>;) // ( and €
 ZMK_BEHAVIOR(CKC_C_PAR,    mod_morph, bindings = <&kp LS(N9)>,      <&kp LS(N4)>;       mods = <(MOD_LSFT|MOD_RSFT)>;) // ) and $
-ZMK_BEHAVIOR(CKC_AND,      mod_morph, bindings = <&kp LS(N6)>,      <&kp LS(ES_MORD)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // & and ª 
-ZMK_BEHAVIOR(CKC_OR,       mod_morph, bindings = <&kp RA(N1)>,      <&kp ES_MORD>;      mods = <(MOD_LSFT|MOD_RSFT)>;) // || and º 
-ZMK_BEHAVIOR(CKC_O_CUR,    mod_morph, bindings = <&kp RA(ES_ACUT)>, <&kp RA(ES_ACUT)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // { 
+ZMK_BEHAVIOR(CKC_AND,      mod_morph, bindings = <&kp LS(N6)>,      <&kp LS(ES_MORD)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // & and ª
+ZMK_BEHAVIOR(CKC_OR,       mod_morph, bindings = <&kp RA(N1)>,      <&kp ES_MORD>;      mods = <(MOD_LSFT|MOD_RSFT)>;) // || and º
+ZMK_BEHAVIOR(CKC_O_CUR,    mod_morph, bindings = <&kp RA(ES_ACUT)>, <&kp RA(ES_ACUT)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // {
 ZMK_BEHAVIOR(CKC_C_CUR,    mod_morph, bindings = <&kp RA(ES_CCED)>, <&kp RA(ES_CCED)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // }
 ZMK_BEHAVIOR(CKC_O_BRK,    mod_morph, bindings = <&kp RA(ES_GRV)>,  <&kp RA(ES_GRV)>;   mods = <(MOD_LSFT|MOD_RSFT)>;) // [
 ZMK_BEHAVIOR(CKC_C_BRK,    mod_morph, bindings = <&kp RA(ES_PLUS)>, <&kp RA(ES_PLUS)>;  mods = <(MOD_LSFT|MOD_RSFT)>;) // ]
@@ -223,13 +223,13 @@ ZMK_BEHAVIOR(M_ROFI,            macro, bindings = <&kp LG(D)>;)      // Spawns t
 ZMK_BEHAVIOR(M_ROFI_SHORTCUTS,  macro, bindings = <&kp LC(LG(S))>;)  // Spawns rofi-shortcuts by zeioth
 ZMK_BEHAVIOR(M_ROFI_EMOJI,      macro, bindings = <&kp LC(LG(E))>;)  // Shows all emojis and copy selection to clipboard
 ZMK_BEHAVIOR(M_CALC,            macro, bindings = <&kp LG(F8)>;)     // Open calculator
-ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(LG(M))>;)  // Open rofi-zeal by zeioth 
+ZMK_BEHAVIOR(M_ROFI_MANUALS,    macro, bindings = <&kp LC(LG(M))>;)  // Open rofi-zeal by zeioth
 ZMK_BEHAVIOR(M_ROFI_DOCS,       macro, bindings = <&kp LS(LG(T))>;)  // Open rofi and browse in the documentation of my projects
 ZMK_BEHAVIOR(M_ROFI_ACTIVITIES, macro, bindings = <&kp LG(T)>;)      // Open the activities  selector
-ZMK_BEHAVIOR(M_RANGER,          macro, bindings = <&kp LG(F1)>;)     // Open ranger TUI file browser 
-ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp LG(F2)>;)     // Open GUI file browser 
-ZMK_BEHAVIOR(M_VIM,             macro, bindings = <&kp LG(F10)>;)    // Open VIM 
-ZMK_BEHAVIOR(M_WEATHER,         macro, bindings = <&kp LC(LG(W))>;)  // Open TUI weather 
+ZMK_BEHAVIOR(M_RANGER,          macro, bindings = <&kp LG(F1)>;)     // Open ranger TUI file browser
+ZMK_BEHAVIOR(M_FILEX,           macro, bindings = <&kp LG(F2)>;)     // Open GUI file browser
+ZMK_BEHAVIOR(M_VIM,             macro, bindings = <&kp LG(F10)>;)    // Open VIM
+ZMK_BEHAVIOR(M_WEATHER,         macro, bindings = <&kp LC(LG(W))>;)  // Open TUI weather
 
 // ARROW MODE LAYER MACROS
 // -----------------------------------------------------------------------
